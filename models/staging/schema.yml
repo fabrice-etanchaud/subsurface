@@ -43,7 +43,7 @@ models:
       - name: department_code
         tests:
           - not_null
-      - name: departement_label
+      - name: department_label
         tests:
           - not_null
       - name: region_code
