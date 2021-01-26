@@ -1,0 +1,8 @@
+version: 2
+
+analyses:
+  - name: most_expansive_departments_for_flats
+    description: which deparments are the most expansive for flats
+
+  - name: transactions_seasonality
+    description: what is the transactions monthly frequency
