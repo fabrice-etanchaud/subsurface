@@ -1,0 +1,40 @@
+version: 2
+
+seeds:
+
+  - name: crop_types
+    description: types of crops, cultures
+    columns:
+      - name: crop_code
+        tests:
+          - not_null
+          - unique
+      - name: crop_label
+        tests:
+          - not_null
+
+  - name: premises_types
+    description: types of premises
+    columns:
+      - name: premises_code
+        tests:
+          - not_null
+          - unique
+      - name: premises_label_fr
+        tests:
+          - not_null
+      - name: premises_label_en
+        tests:
+          - not_null
+
+  - name: transfer_types
+    description: types of transfer of ownership
+    columns:
+      - name: transfer_label_fr
+        tests:
+          - not_null
+          - unique
+      - name: transfer_label_en
+        tests:
+          - not_null
+          - unique

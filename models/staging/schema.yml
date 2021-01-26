@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: stg__land_values
+    description: land value at transaction time
+    columns:
+        - name: transaction_date
+          tests:
+            - not_null
+        - name: transaction_amount
+        - name: transfer_label_fr
+          tests:
+            - not_null
+            - relationships:
+                to: ref('transfer_types')
+                field: transfer_label_fr
+        - name: lane_type
+        - name: lane_code
+        - name: lane
+        - name: zip_code
+        - name: municipality_code
+          tests:
+            - not_null
+        - name: lots_count
+          tests:
+            - not_null
+        - name: premises_code
+        - name: built_surface
+        - name: land_surface
+        - name: main_rooms_count
+        - name: crop_code
+
+  - name: stg__municipalities
+    description: municipalities, departement and region
+    columns:
+      - name: municipality_code
+        tests:
+          - not_null
+          - unique
+      - name: municipality_label
+        tests:
+          - not_null
+      - name: department_code
+        tests:
+          - not_null
+      - name: departement_label
+        tests:
+          - not_null
+      - name: region_code
+        tests:
+          - not_null
+      - name: region_label
+        tests:
+          - not_null

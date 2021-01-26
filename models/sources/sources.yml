@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+
+  - name: land_values
+    description: land value at transaction time
+    database: fs
+    schema: no_schema
+
+    quoting:
+      identifier: true
+
+    tables:
+      - name: valeurs_foncieres
+        description: land values at transaction time
+
+  - name: geo
+    description: geographic reference data
+    database: fs
+    schema: geo
+
+    tables:
+      - name: communes
+        identifier: communes.csv
+        description: municipalities

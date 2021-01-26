@@ -1,0 +1,81 @@
+version: 2
+
+models:
+  - name: f_land_values
+    description: land value at transaction time
+    columns:
+        - name: transaction_date
+          tests:
+            - not_null
+        - name: transaction_amount
+          tests:
+            - not_null
+        - name: transfer_label
+          tests:
+            - not_null
+        - name: lane_type
+          tests:
+            - not_null
+        - name: lane_code
+          tests:
+            - not_null
+        - name: lane
+          tests:
+            - not_null
+        - name: zip_code
+          tests:
+            - not_null
+        - name: municipality_code
+          tests:
+            - not_null
+            - relationships:
+                to: ref('d_municipalities')
+                field: municipality_code
+        - name: lots_count
+          tests:
+            - not_null
+        - name: premises_code
+          tests:
+            - not_null
+            - relationships:
+                to: ref('d_premises_types')
+                field: premises_code
+        - name: built_surface
+          tests:
+            - not_null
+        - name: land_surface
+          tests:
+            - not_null
+        - name: main_rooms_count
+          tests:
+            - not_null
+        - name: crop_code
+          tests:
+            - not_null
+            - relationships:
+                to: ref('d_crop_types')
+                field: crop_code
+
+  - name: d_crop_types
+    description: land value at transaction time
+    columns:
+        - name: crop_code
+          tests:
+            - not_null
+            - unique
+
+  - name: d_premises_types
+    description: type of premises
+    columns:
+        - name: premises_code
+          tests:
+            - not_null
+            - unique
+
+  - name: d_municipalities
+    description: hierarchical geographic dimension
+    columns:
+        - name: municipality_code
+          tests:
+            - not_null
+            - unique

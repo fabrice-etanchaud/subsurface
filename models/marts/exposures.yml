@@ -1,0 +1,20 @@
+version: 2
+
+exposures:
+
+  - name: transfer_of_ownership
+    type: dashboard
+    maturity: low
+    url: https://bi.tool/dashboards/1
+    description: >
+      Land value at transaction time in France since 2015
+
+    depends_on:
+      - ref('f_land_values')
+      - ref('d_crop_types')
+      - ref('d_premises_types')
+      - ref('d_municipalities')
+
+    owner:
+      name: Ringo and Paul
+      email: ringoandpaul@aharddaysnight.fr
