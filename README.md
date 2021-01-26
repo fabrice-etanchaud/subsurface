@@ -9,7 +9,7 @@ Welcome to the db-dremio demo project for subsurface !
 
 
 ### Resources:
-- (Subsurface conference)[https://subsurfaceconf.com]
+- [Subsurface conference](https://subsurfaceconf.com)
 - Learn more about [dbt](https://docs.getdbt.com/docs/introduction)
 - Learn more about [dremio](https://dremio.com)
 - dbt-dremio [dbt-dremio](https://github.com/fabrice-etanchaud/dbt-dremio)
