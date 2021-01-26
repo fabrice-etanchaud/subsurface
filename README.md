@@ -1,5 +1,7 @@
 Welcome to the db-dremio demo project for subsurface !
 
+![DAG](subsurface.png)
+
 ### French open data used in this demo :
 
 - [Demandes de valeurs foncières](https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/) : Land values at transaction time (since late 2015).
