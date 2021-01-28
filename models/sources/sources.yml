@@ -4,7 +4,7 @@ sources:
 
   - name: land_values
     description: land value at transaction time
-    database: fs
+    database: subsurface_datalake
     schema: no_schema
 
     quoting:
@@ -16,7 +16,7 @@ sources:
 
   - name: geo
     description: geographic reference data
-    database: fs
+    database: subsurface_datalake
     schema: geo
 
     tables:

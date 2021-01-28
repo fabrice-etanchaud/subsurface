@@ -38474,3 +38474,2140 @@ Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
 
 2021-01-26 11:05:04.675510 (MainThread): Flushing usage events
 2021-01-26 11:05:05.699298 (MainThread): ctrl-c
+2021-01-28 15:29:25.674025 (MainThread): Running with dbt=0.18.1
+2021-01-28 15:29:25.789338 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.generate.GenerateTask'>, compile=True, debug=False, defer=None, exclude=None, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/root/.dbt', project_dir=None, record_timing_info=None, rpc_method='docs.generate', selector_name=None, single_threaded=False, state=None, strict=False, target='unmanaged', test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='generate', write_json=True)
+2021-01-28 15:29:25.790859 (MainThread): Tracking: tracking
+2021-01-28 15:29:25.806334 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2192fe9710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f219c77e9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f219c77e978>]}
+2021-01-28 15:29:25.858782 (MainThread): Partial parsing not enabled
+2021-01-28 15:29:25.860423 (MainThread): Parsing macros/get_custom_database.sql
+2021-01-28 15:29:25.866386 (MainThread): Parsing macros/get_custom_schema.sql
+2021-01-28 15:29:25.868427 (MainThread): Parsing macros/non_regression_test.sql
+2021-01-28 15:29:25.897219 (MainThread): Parsing macros/catalog.sql
+2021-01-28 15:29:25.901532 (MainThread): Parsing macros/adapters.sql
+2021-01-28 15:29:25.941318 (MainThread): Parsing macros/helpers.sql
+2021-01-28 15:29:25.971150 (MainThread): Parsing macros/get_custom_database.sql
+2021-01-28 15:29:25.974671 (MainThread): Parsing macros/get_custom_schema.sql
+2021-01-28 15:29:25.976740 (MainThread): Parsing macros/drop_orphaned_tables.sql
+2021-01-28 15:29:25.982207 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-01-28 15:29:26.007355 (MainThread): Parsing macros/materializations/view/view.sql
+2021-01-28 15:29:26.015318 (MainThread): Parsing macros/materializations/table/table.sql
+2021-01-28 15:29:26.026026 (MainThread): Parsing macros/materializations/file/file.sql
+2021-01-28 15:29:26.038087 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-01-28 15:29:26.062645 (MainThread): Parsing macros/materializations/raw_reflection/raw_reflection.sql
+2021-01-28 15:29:26.076039 (MainThread): Parsing macros/materializations/aggregation_reflection/aggregation_reflection.sql
+2021-01-28 15:29:26.092845 (MainThread): Parsing macros/operations/drop_orphan_tables.sql
+2021-01-28 15:29:26.094983 (MainThread): Parsing macros/core.sql
+2021-01-28 15:29:26.101642 (MainThread): Parsing macros/adapters/common.sql
+2021-01-28 15:29:26.173959 (MainThread): Parsing macros/etc/datetime.sql
+2021-01-28 15:29:26.189214 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-01-28 15:29:26.190987 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-01-28 15:29:26.194046 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-01-28 15:29:26.197748 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-01-28 15:29:26.200841 (MainThread): Parsing macros/etc/query.sql
+2021-01-28 15:29:26.202852 (MainThread): Parsing macros/materializations/helpers.sql
+2021-01-28 15:29:26.271063 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-01-28 15:29:26.295807 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-01-28 15:29:26.299166 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-01-28 15:29:26.310577 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-01-28 15:29:26.345962 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-28 15:29:26.391413 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-28 15:29:26.394673 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-28 15:29:26.424894 (MainThread): Parsing macros/materializations/table/table.sql
+2021-01-28 15:29:26.436531 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-28 15:29:26.445428 (MainThread): Parsing macros/materializations/view/view.sql
+2021-01-28 15:29:26.456403 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-01-28 15:29:26.461260 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-01-28 15:29:26.464137 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-01-28 15:29:26.467608 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-01-28 15:29:26.481130 (MainThread): Partial parsing not enabled
+2021-01-28 15:29:26.559556 (MainThread): Acquiring new dremio connection "model.subsurface.d_crop_types".
+2021-01-28 15:29:26.604056 (MainThread): Acquiring new dremio connection "model.subsurface.d_municipalities".
+2021-01-28 15:29:26.627524 (MainThread): Acquiring new dremio connection "model.subsurface.d_premises_types".
+2021-01-28 15:29:26.649278 (MainThread): Acquiring new dremio connection "model.subsurface.f_land_values".
+2021-01-28 15:29:26.672516 (MainThread): Acquiring new dremio connection "model.subsurface.stg__land_values".
+2021-01-28 15:29:26.694468 (MainThread): Acquiring new dremio connection "model.subsurface.stg__municipalities".
+2021-01-28 15:29:26.723571 (MainThread): Acquiring new dremio connection "analysis.subsurface.most_expensive_departments_for_flats".
+2021-01-28 15:29:26.748290 (MainThread): Acquiring new dremio connection "analysis.subsurface.transactions_seasonality".
+2021-01-28 15:29:26.781385 (MainThread): Acquiring new dremio connection "test.subsurface.stg__land_values_built_surface_implies_premises_code".
+2021-01-28 15:29:26.802813 (MainThread): Acquiring new dremio connection "test.subsurface.stg__land_values_land_surface_implies_crop_code".
+2021-01-28 15:29:28.513128 (MainThread): WARNING: Found documentation for resource "most_expansive_departments_for_flats" which was not found or is disabled
+2021-01-28 15:29:29.087323 (MainThread): Found 6 models, 48 tests, 0 snapshots, 2 analyses, 167 macros, 0 operations, 3 seed files, 2 sources
+2021-01-28 15:29:29.093165 (MainThread): 
+2021-01-28 15:29:29.093809 (MainThread): Acquiring new dremio connection "master".
+2021-01-28 15:29:29.328175 (ThreadPoolExecutor-0_0): Acquiring new dremio connection "list_@fab4_no_schema".
+2021-01-28 15:29:29.369692 (ThreadPoolExecutor-0_0): Using dremio connection "list_@fab4_no_schema".
+2021-01-28 15:29:29.370065 (ThreadPoolExecutor-0_0): On list_@fab4_no_schema: with t1(table_catalog, table_name, table_schema, table_type) as (
+    select lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+        ,lower(table_name)
+        ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+        ,lower(table_type)
+    from information_schema."tables"
+    )
+    ,r1(identifier_position, database_end_position, dataset, name, type) as (
+        select
+            case when "RIGHT"(dataset, 1) = '"'
+                then length(dataset) - strpos(substr(reverse(dataset), 2), '"')
+                else length(dataset) - strpos(reverse(dataset), '.') + 2
+            end
+            ,case when "LEFT"(dataset, 1) = '"'
+                then strpos(substr(dataset, 2), '"') + 1
+                else strpos(dataset, '.') - 1
+            end
+            ,dataset
+            ,name
+            ,type
+        from sys.reflections
+    )
+    ,r2(table_catalog, table_name, table_schema, table_type) as (
+    select
+        lower(replace(substr(dataset, 1, database_end_position), '"', ''))
+        ,lower(name)
+        ,case when identifier_position - database_end_position > 2
+            then lower(replace(substr(dataset, database_end_position + 2, identifier_position - database_end_position - 3), '"', ''))
+            else 'no_schema'
+        end
+        -- ,lower(type) || 'reflection'
+        ,'materializedview'
+--        ,replace(substr(dataset, identifier_position), '"', '') as identifier
+    from r1
+    )
+    ,u(table_catalog, table_name, table_schema, table_type) as (
+      select *
+      from t1
+      union all
+      select *
+      from r2
+    )
+
+    select *
+    from u
+    where ilike(table_catalog, '@fab4')
+      and ilike(table_schema, 'no_schema')
+      and table_type <> 'system_table'
+  
+2021-01-28 15:29:29.370367 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-01-28 15:29:29.370698 (ThreadPoolExecutor-0_0): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:29:29.659961 (ThreadPoolExecutor-0_0): Connected to db: None
+2021-01-28 15:29:37.072076 (ThreadPoolExecutor-0_0): SQL status: OK in 7.70 seconds
+2021-01-28 15:29:37.140169 (ThreadPoolExecutor-0_0): On list_@fab4_no_schema: ROLLBACK
+2021-01-28 15:29:37.140599 (ThreadPoolExecutor-0_0): On list_@fab4_no_schema: Close
+2021-01-28 15:29:37.143377 (MainThread): 16:29:37 | Concurrency: 4 threads (target='unmanaged')
+2021-01-28 15:29:37.143743 (MainThread): 16:29:37 | 
+2021-01-28 15:29:37.150847 (Thread-1): Began running node model.subsurface.stg__land_values
+2021-01-28 15:29:37.151602 (Thread-1): Acquiring new dremio connection "model.subsurface.stg__land_values".
+2021-01-28 15:29:37.151887 (Thread-1): Compiling model.subsurface.stg__land_values
+2021-01-28 15:29:37.157485 (Thread-2): Began running node model.subsurface.stg__municipalities
+2021-01-28 15:29:37.158138 (Thread-4): Began running node seed.subsurface.crop_types
+2021-01-28 15:29:37.168542 (Thread-3): Began running node seed.subsurface.premises_types
+2021-01-28 15:29:37.179788 (Thread-2): Acquiring new dremio connection "model.subsurface.stg__municipalities".
+2021-01-28 15:29:37.180673 (Thread-4): Acquiring new dremio connection "seed.subsurface.crop_types".
+2021-01-28 15:29:37.192144 (Thread-3): Acquiring new dremio connection "seed.subsurface.premises_types".
+2021-01-28 15:29:37.192672 (Thread-2): Compiling model.subsurface.stg__municipalities
+2021-01-28 15:29:37.198223 (Thread-4): Compiling seed.subsurface.crop_types
+2021-01-28 15:29:37.219273 (Thread-3): Compiling seed.subsurface.premises_types
+2021-01-28 15:29:37.248094 (Thread-1): Writing injected SQL for node "model.subsurface.stg__land_values"
+2021-01-28 15:29:37.341686 (Thread-1): finished collecting timing info
+2021-01-28 15:29:37.348284 (Thread-1): finished collecting timing info
+2021-01-28 15:29:37.355506 (Thread-1): Finished running node model.subsurface.stg__land_values
+2021-01-28 15:29:37.361800 (Thread-1): Began running node seed.subsurface.transfer_types
+2021-01-28 15:29:37.364123 (Thread-2): Writing injected SQL for node "model.subsurface.stg__municipalities"
+2021-01-28 15:29:37.377207 (Thread-4): finished collecting timing info
+2021-01-28 15:29:37.389733 (Thread-1): Acquiring new dremio connection "seed.subsurface.transfer_types".
+2021-01-28 15:29:37.403820 (Thread-3): finished collecting timing info
+2021-01-28 15:29:37.405675 (Thread-2): finished collecting timing info
+2021-01-28 15:29:37.406890 (Thread-4): finished collecting timing info
+2021-01-28 15:29:37.408179 (Thread-1): Compiling seed.subsurface.transfer_types
+2021-01-28 15:29:37.408851 (Thread-3): finished collecting timing info
+2021-01-28 15:29:37.410102 (Thread-2): finished collecting timing info
+2021-01-28 15:29:37.412342 (Thread-4): Finished running node seed.subsurface.crop_types
+2021-01-28 15:29:37.424597 (Thread-3): Finished running node seed.subsurface.premises_types
+2021-01-28 15:29:37.441062 (Thread-2): Finished running node model.subsurface.stg__municipalities
+2021-01-28 15:29:37.445658 (Thread-1): finished collecting timing info
+2021-01-28 15:29:37.446987 (Thread-4): Began running node test.subsurface.not_null_stg__land_values_lots_count
+2021-01-28 15:29:37.448362 (Thread-3): Began running node test.subsurface.not_null_stg__land_values_municipality_code
+2021-01-28 15:29:37.450953 (Thread-2): Began running node test.subsurface.not_null_stg__land_values_transaction_date
+2021-01-28 15:29:37.451647 (Thread-1): finished collecting timing info
+2021-01-28 15:29:37.454785 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_stg__land_values_lots_count".
+2021-01-28 15:29:37.456233 (Thread-3): Acquiring new dremio connection "test.subsurface.not_null_stg__land_values_municipality_code".
+2021-01-28 15:29:37.457471 (Thread-2): Acquiring new dremio connection "test.subsurface.not_null_stg__land_values_transaction_date".
+2021-01-28 15:29:37.458797 (Thread-1): Finished running node seed.subsurface.transfer_types
+2021-01-28 15:29:37.459401 (Thread-4): Compiling test.subsurface.not_null_stg__land_values_lots_count
+2021-01-28 15:29:37.460005 (Thread-3): Compiling test.subsurface.not_null_stg__land_values_municipality_code
+2021-01-28 15:29:37.460550 (Thread-2): Compiling test.subsurface.not_null_stg__land_values_transaction_date
+2021-01-28 15:29:37.461173 (Thread-1): Began running node test.subsurface.not_null_stg__land_values_transfer_label_fr
+2021-01-28 15:29:37.542888 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_stg__land_values_transfer_label_fr".
+2021-01-28 15:29:37.559704 (Thread-1): Compiling test.subsurface.not_null_stg__land_values_transfer_label_fr
+2021-01-28 15:29:37.610535 (Thread-2): Writing injected SQL for node "test.subsurface.not_null_stg__land_values_transaction_date"
+2021-01-28 15:29:37.621318 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_stg__land_values_lots_count"
+2021-01-28 15:29:37.649210 (Thread-3): Writing injected SQL for node "test.subsurface.not_null_stg__land_values_municipality_code"
+2021-01-28 15:29:37.650049 (Thread-2): finished collecting timing info
+2021-01-28 15:29:37.669217 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_stg__land_values_transfer_label_fr"
+2021-01-28 15:29:37.670750 (Thread-4): finished collecting timing info
+2021-01-28 15:29:37.671898 (Thread-2): finished collecting timing info
+2021-01-28 15:29:37.673918 (Thread-4): finished collecting timing info
+2021-01-28 15:29:37.674839 (Thread-3): finished collecting timing info
+2021-01-28 15:29:37.676769 (Thread-2): Finished running node test.subsurface.not_null_stg__land_values_transaction_date
+2021-01-28 15:29:37.678254 (Thread-4): Finished running node test.subsurface.not_null_stg__land_values_lots_count
+2021-01-28 15:29:37.678956 (Thread-1): finished collecting timing info
+2021-01-28 15:29:37.680233 (Thread-3): finished collecting timing info
+2021-01-28 15:29:37.681571 (Thread-2): Began running node test.subsurface.stg__land_values_built_surface_implies_premises_code
+2021-01-28 15:29:37.682247 (Thread-4): Began running node test.subsurface.stg__land_values_land_surface_implies_crop_code
+2021-01-28 15:29:37.682896 (Thread-1): finished collecting timing info
+2021-01-28 15:29:37.684801 (Thread-3): Finished running node test.subsurface.not_null_stg__land_values_municipality_code
+2021-01-28 15:29:37.686069 (Thread-2): Acquiring new dremio connection "test.subsurface.stg__land_values_built_surface_implies_premises_code".
+2021-01-28 15:29:37.687882 (Thread-4): Acquiring new dremio connection "test.subsurface.stg__land_values_land_surface_implies_crop_code".
+2021-01-28 15:29:37.689211 (Thread-1): Finished running node test.subsurface.not_null_stg__land_values_transfer_label_fr
+2021-01-28 15:29:37.689940 (Thread-3): Began running node model.subsurface.d_crop_types
+2021-01-28 15:29:37.690948 (Thread-2): Compiling test.subsurface.stg__land_values_built_surface_implies_premises_code
+2021-01-28 15:29:37.691496 (Thread-4): Compiling test.subsurface.stg__land_values_land_surface_implies_crop_code
+2021-01-28 15:29:37.692171 (Thread-1): Began running node test.subsurface.not_null_crop_types_crop_code
+2021-01-28 15:29:37.693366 (Thread-3): Acquiring new dremio connection "model.subsurface.d_crop_types".
+2021-01-28 15:29:37.747343 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_crop_types_crop_code".
+2021-01-28 15:29:37.758549 (Thread-3): Compiling model.subsurface.d_crop_types
+2021-01-28 15:29:37.769012 (Thread-1): Compiling test.subsurface.not_null_crop_types_crop_code
+2021-01-28 15:29:37.839952 (Thread-2): Writing injected SQL for node "test.subsurface.stg__land_values_built_surface_implies_premises_code"
+2021-01-28 15:29:37.862509 (Thread-4): Writing injected SQL for node "test.subsurface.stg__land_values_land_surface_implies_crop_code"
+2021-01-28 15:29:37.882998 (Thread-3): Writing injected SQL for node "model.subsurface.d_crop_types"
+2021-01-28 15:29:37.886411 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_crop_types_crop_code"
+2021-01-28 15:29:37.888992 (Thread-4): finished collecting timing info
+2021-01-28 15:29:37.890238 (Thread-1): finished collecting timing info
+2021-01-28 15:29:37.891261 (Thread-2): finished collecting timing info
+2021-01-28 15:29:37.892616 (Thread-4): finished collecting timing info
+2021-01-28 15:29:37.893776 (Thread-3): finished collecting timing info
+2021-01-28 15:29:37.894784 (Thread-1): finished collecting timing info
+2021-01-28 15:29:37.895887 (Thread-2): finished collecting timing info
+2021-01-28 15:29:37.898062 (Thread-4): Finished running node test.subsurface.stg__land_values_land_surface_implies_crop_code
+2021-01-28 15:29:37.898708 (Thread-3): finished collecting timing info
+2021-01-28 15:29:37.900732 (Thread-1): Finished running node test.subsurface.not_null_crop_types_crop_code
+2021-01-28 15:29:37.902255 (Thread-2): Finished running node test.subsurface.stg__land_values_built_surface_implies_premises_code
+2021-01-28 15:29:37.903093 (Thread-4): Began running node test.subsurface.not_null_crop_types_crop_label
+2021-01-28 15:29:37.904976 (Thread-3): Finished running node model.subsurface.d_crop_types
+2021-01-28 15:29:37.905746 (Thread-1): Began running node test.subsurface.unique_crop_types_crop_code
+2021-01-28 15:29:37.906926 (Thread-2): Began running node model.subsurface.d_premises_types
+2021-01-28 15:29:37.908907 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_crop_types_crop_label".
+2021-01-28 15:29:37.909647 (Thread-3): Began running node test.subsurface.not_null_premises_types_premises_code
+2021-01-28 15:29:37.910923 (Thread-1): Acquiring new dremio connection "test.subsurface.unique_crop_types_crop_code".
+2021-01-28 15:29:37.912553 (Thread-2): Acquiring new dremio connection "model.subsurface.d_premises_types".
+2021-01-28 15:29:37.913735 (Thread-4): Compiling test.subsurface.not_null_crop_types_crop_label
+2021-01-28 15:29:37.915199 (Thread-3): Acquiring new dremio connection "test.subsurface.not_null_premises_types_premises_code".
+2021-01-28 15:29:37.915791 (Thread-1): Compiling test.subsurface.unique_crop_types_crop_code
+2021-01-28 15:29:37.916315 (Thread-2): Compiling model.subsurface.d_premises_types
+2021-01-28 15:29:37.927719 (Thread-3): Compiling test.subsurface.not_null_premises_types_premises_code
+2021-01-28 15:29:37.967693 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_crop_types_crop_label"
+2021-01-28 15:29:38.029181 (Thread-1): Writing injected SQL for node "test.subsurface.unique_crop_types_crop_code"
+2021-01-28 15:29:38.051307 (Thread-2): Writing injected SQL for node "model.subsurface.d_premises_types"
+2021-01-28 15:29:38.075206 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.076526 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.079713 (Thread-3): Writing injected SQL for node "test.subsurface.not_null_premises_types_premises_code"
+2021-01-28 15:29:38.080200 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.081572 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.082662 (Thread-2): finished collecting timing info
+2021-01-28 15:29:38.085017 (Thread-4): Finished running node test.subsurface.not_null_crop_types_crop_label
+2021-01-28 15:29:38.086621 (Thread-1): Finished running node test.subsurface.unique_crop_types_crop_code
+2021-01-28 15:29:38.087605 (Thread-2): finished collecting timing info
+2021-01-28 15:29:38.089044 (Thread-4): Began running node test.subsurface.not_null_premises_types_premises_label_en
+2021-01-28 15:29:38.089593 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.091269 (Thread-1): Began running node test.subsurface.not_null_premises_types_premises_label_fr
+2021-01-28 15:29:38.092710 (Thread-2): Finished running node model.subsurface.d_premises_types
+2021-01-28 15:29:38.094171 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_premises_types_premises_label_en".
+2021-01-28 15:29:38.095020 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.101802 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_premises_types_premises_label_fr".
+2021-01-28 15:29:38.102580 (Thread-2): Began running node test.subsurface.unique_premises_types_premises_code
+2021-01-28 15:29:38.103223 (Thread-4): Compiling test.subsurface.not_null_premises_types_premises_label_en
+2021-01-28 15:29:38.104639 (Thread-3): Finished running node test.subsurface.not_null_premises_types_premises_code
+2021-01-28 15:29:38.105751 (Thread-1): Compiling test.subsurface.not_null_premises_types_premises_label_fr
+2021-01-28 15:29:38.107522 (Thread-2): Acquiring new dremio connection "test.subsurface.unique_premises_types_premises_code".
+2021-01-28 15:29:38.124088 (Thread-3): Began running node model.subsurface.d_municipalities
+2021-01-28 15:29:38.159216 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_premises_types_premises_label_en"
+2021-01-28 15:29:38.166502 (Thread-2): Compiling test.subsurface.unique_premises_types_premises_code
+2021-01-28 15:29:38.183089 (Thread-3): Acquiring new dremio connection "model.subsurface.d_municipalities".
+2021-01-28 15:29:38.189099 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_premises_types_premises_label_fr"
+2021-01-28 15:29:38.195741 (Thread-3): Compiling model.subsurface.d_municipalities
+2021-01-28 15:29:38.196417 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.209171 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.216724 (Thread-4): Finished running node test.subsurface.not_null_premises_types_premises_label_en
+2021-01-28 15:29:38.232824 (Thread-4): Began running node test.subsurface.not_null_stg__municipalities_department_code
+2021-01-28 15:29:38.249687 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.258709 (Thread-3): Writing injected SQL for node "model.subsurface.d_municipalities"
+2021-01-28 15:29:38.259811 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_stg__municipalities_department_code".
+2021-01-28 15:29:38.265783 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.280764 (Thread-1): Finished running node test.subsurface.not_null_premises_types_premises_label_fr
+2021-01-28 15:29:38.277889 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.279215 (Thread-4): Compiling test.subsurface.not_null_stg__municipalities_department_code
+2021-01-28 15:29:38.276407 (Thread-2): Writing injected SQL for node "test.subsurface.unique_premises_types_premises_code"
+2021-01-28 15:29:38.281494 (Thread-1): Began running node test.subsurface.not_null_stg__municipalities_department_label
+2021-01-28 15:29:38.282171 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.305923 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_stg__municipalities_department_label".
+2021-01-28 15:29:38.323625 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_stg__municipalities_department_code"
+2021-01-28 15:29:38.325277 (Thread-3): Finished running node model.subsurface.d_municipalities
+2021-01-28 15:29:38.326117 (Thread-2): finished collecting timing info
+2021-01-28 15:29:38.327691 (Thread-1): Compiling test.subsurface.not_null_stg__municipalities_department_label
+2021-01-28 15:29:38.328877 (Thread-3): Began running node test.subsurface.not_null_stg__municipalities_municipality_code
+2021-01-28 15:29:38.329648 (Thread-2): finished collecting timing info
+2021-01-28 15:29:38.331859 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.339285 (Thread-3): Acquiring new dremio connection "test.subsurface.not_null_stg__municipalities_municipality_code".
+2021-01-28 15:29:38.351819 (Thread-2): Finished running node test.subsurface.unique_premises_types_premises_code
+2021-01-28 15:29:38.367694 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.375701 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_stg__municipalities_department_label"
+2021-01-28 15:29:38.380480 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.377235 (Thread-2): Began running node test.subsurface.not_null_stg__municipalities_municipality_label
+2021-01-28 15:29:38.379145 (Thread-4): Finished running node test.subsurface.not_null_stg__municipalities_department_code
+2021-01-28 15:29:38.376367 (Thread-3): Compiling test.subsurface.not_null_stg__municipalities_municipality_code
+2021-01-28 15:29:38.381610 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.383256 (Thread-2): Acquiring new dremio connection "test.subsurface.not_null_stg__municipalities_municipality_label".
+2021-01-28 15:29:38.383984 (Thread-4): Began running node test.subsurface.not_null_stg__municipalities_region_code
+2021-01-28 15:29:38.396331 (Thread-1): Finished running node test.subsurface.not_null_stg__municipalities_department_label
+2021-01-28 15:29:38.412862 (Thread-2): Compiling test.subsurface.not_null_stg__municipalities_municipality_label
+2021-01-28 15:29:38.425158 (Thread-3): Writing injected SQL for node "test.subsurface.not_null_stg__municipalities_municipality_code"
+2021-01-28 15:29:38.426213 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_stg__municipalities_region_code".
+2021-01-28 15:29:38.427201 (Thread-1): Began running node test.subsurface.not_null_stg__municipalities_region_label
+2021-01-28 15:29:38.439912 (Thread-4): Compiling test.subsurface.not_null_stg__municipalities_region_code
+2021-01-28 15:29:38.447919 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_stg__municipalities_region_label".
+2021-01-28 15:29:38.467667 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.472558 (Thread-2): Writing injected SQL for node "test.subsurface.not_null_stg__municipalities_municipality_label"
+2021-01-28 15:29:38.483853 (Thread-1): Compiling test.subsurface.not_null_stg__municipalities_region_label
+2021-01-28 15:29:38.504866 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.512965 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_stg__municipalities_region_code"
+2021-01-28 15:29:38.531012 (Thread-3): Finished running node test.subsurface.not_null_stg__municipalities_municipality_code
+2021-01-28 15:29:38.537086 (Thread-2): finished collecting timing info
+2021-01-28 15:29:38.557764 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_stg__municipalities_region_label"
+2021-01-28 15:29:38.558653 (Thread-3): Began running node test.subsurface.unique_stg__municipalities_municipality_code
+2021-01-28 15:29:38.559098 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.560429 (Thread-2): finished collecting timing info
+2021-01-28 15:29:38.562724 (Thread-3): Acquiring new dremio connection "test.subsurface.unique_stg__municipalities_municipality_code".
+2021-01-28 15:29:38.563387 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.565165 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.567363 (Thread-2): Finished running node test.subsurface.not_null_stg__municipalities_municipality_label
+2021-01-28 15:29:38.568029 (Thread-3): Compiling test.subsurface.unique_stg__municipalities_municipality_code
+2021-01-28 15:29:38.570320 (Thread-4): Finished running node test.subsurface.not_null_stg__municipalities_region_code
+2021-01-28 15:29:38.571096 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.572624 (Thread-2): Began running node model.subsurface.f_land_values
+2021-01-28 15:29:38.589815 (Thread-4): Began running node test.subsurface.not_null_transfer_types_transfer_label_en
+2021-01-28 15:29:38.612243 (Thread-1): Finished running node test.subsurface.not_null_stg__municipalities_region_label
+2021-01-28 15:29:38.617501 (Thread-3): Writing injected SQL for node "test.subsurface.unique_stg__municipalities_municipality_code"
+2021-01-28 15:29:38.618612 (Thread-2): Acquiring new dremio connection "model.subsurface.f_land_values".
+2021-01-28 15:29:38.619802 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_transfer_types_transfer_label_en".
+2021-01-28 15:29:38.620610 (Thread-1): Began running node test.subsurface.not_null_transfer_types_transfer_label_fr
+2021-01-28 15:29:38.621984 (Thread-2): Compiling model.subsurface.f_land_values
+2021-01-28 15:29:38.622832 (Thread-4): Compiling test.subsurface.not_null_transfer_types_transfer_label_en
+2021-01-28 15:29:38.623408 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.625116 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_transfer_types_transfer_label_fr".
+2021-01-28 15:29:38.652510 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.669288 (Thread-1): Compiling test.subsurface.not_null_transfer_types_transfer_label_fr
+2021-01-28 15:29:38.696428 (Thread-3): Finished running node test.subsurface.unique_stg__municipalities_municipality_code
+2021-01-28 15:29:38.704008 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_transfer_types_transfer_label_en"
+2021-01-28 15:29:38.720820 (Thread-3): Began running node test.subsurface.relationships_stg__land_values_transfer_label_fr__transfer_label_fr__ref_transfer_types_
+2021-01-28 15:29:38.749130 (Thread-3): Acquiring new dremio connection "test.subsurface.relationships_stg__land_values_transfer_label_fr__transfer_label_fr__ref_transfer_types_".
+2021-01-28 15:29:38.772542 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_transfer_types_transfer_label_fr"
+2021-01-28 15:29:38.773231 (Thread-3): Compiling test.subsurface.relationships_stg__land_values_transfer_label_fr__transfer_label_fr__ref_transfer_types_
+2021-01-28 15:29:38.779931 (Thread-2): Writing injected SQL for node "model.subsurface.f_land_values"
+2021-01-28 15:29:38.787192 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.818907 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.808410 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.831669 (Thread-4): Finished running node test.subsurface.not_null_transfer_types_transfer_label_en
+2021-01-28 15:29:38.841221 (Thread-3): Writing injected SQL for node "test.subsurface.relationships_stg__land_values_transfer_label_fr__transfer_label_fr__ref_transfer_types_"
+2021-01-28 15:29:38.841680 (Thread-2): finished collecting timing info
+2021-01-28 15:29:38.845622 (Thread-2): finished collecting timing info
+2021-01-28 15:29:38.844055 (Thread-4): Began running node test.subsurface.unique_transfer_types_transfer_label_en
+2021-01-28 15:29:38.842746 (Thread-1): finished collecting timing info
+2021-01-28 15:29:38.847588 (Thread-2): Finished running node model.subsurface.f_land_values
+2021-01-28 15:29:38.849110 (Thread-4): Acquiring new dremio connection "test.subsurface.unique_transfer_types_transfer_label_en".
+2021-01-28 15:29:38.850361 (Thread-1): Finished running node test.subsurface.not_null_transfer_types_transfer_label_fr
+2021-01-28 15:29:38.851240 (Thread-2): Began running node test.subsurface.unique_transfer_types_transfer_label_fr
+2021-01-28 15:29:38.851886 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.853665 (Thread-4): Compiling test.subsurface.unique_transfer_types_transfer_label_en
+2021-01-28 15:29:38.857339 (Thread-1): Began running node test.subsurface.not_null_d_crop_types_crop_code
+2021-01-28 15:29:38.858898 (Thread-2): Acquiring new dremio connection "test.subsurface.unique_transfer_types_transfer_label_fr".
+2021-01-28 15:29:38.859572 (Thread-3): finished collecting timing info
+2021-01-28 15:29:38.872028 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_d_crop_types_crop_code".
+2021-01-28 15:29:38.877768 (Thread-2): Compiling test.subsurface.unique_transfer_types_transfer_label_fr
+2021-01-28 15:29:38.894621 (Thread-3): Finished running node test.subsurface.relationships_stg__land_values_transfer_label_fr__transfer_label_fr__ref_transfer_types_
+2021-01-28 15:29:38.905733 (Thread-4): Writing injected SQL for node "test.subsurface.unique_transfer_types_transfer_label_en"
+2021-01-28 15:29:38.906212 (Thread-1): Compiling test.subsurface.not_null_d_crop_types_crop_code
+2021-01-28 15:29:38.918179 (Thread-3): Began running node test.subsurface.unique_d_crop_types_crop_code
+2021-01-28 15:29:38.958412 (Thread-2): Writing injected SQL for node "test.subsurface.unique_transfer_types_transfer_label_fr"
+2021-01-28 15:29:38.965594 (Thread-3): Acquiring new dremio connection "test.subsurface.unique_d_crop_types_crop_code".
+2021-01-28 15:29:38.981143 (Thread-4): finished collecting timing info
+2021-01-28 15:29:38.990154 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_d_crop_types_crop_code"
+2021-01-28 15:29:38.990867 (Thread-3): Compiling test.subsurface.unique_d_crop_types_crop_code
+2021-01-28 15:29:38.991403 (Thread-2): finished collecting timing info
+2021-01-28 15:29:38.992661 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.005072 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.022034 (Thread-4): Finished running node test.subsurface.unique_transfer_types_transfer_label_en
+2021-01-28 15:29:39.031824 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.041280 (Thread-3): Writing injected SQL for node "test.subsurface.unique_d_crop_types_crop_code"
+2021-01-28 15:29:39.042655 (Thread-2): Finished running node test.subsurface.unique_transfer_types_transfer_label_fr
+2021-01-28 15:29:39.043598 (Thread-4): Began running node test.subsurface.not_null_d_premises_types_premises_code
+2021-01-28 15:29:39.044667 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.046503 (Thread-2): Began running node test.subsurface.unique_d_premises_types_premises_code
+2021-01-28 15:29:39.047347 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.049583 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_d_premises_types_premises_code".
+2021-01-28 15:29:39.050923 (Thread-1): Finished running node test.subsurface.not_null_d_crop_types_crop_code
+2021-01-28 15:29:39.052188 (Thread-2): Acquiring new dremio connection "test.subsurface.unique_d_premises_types_premises_code".
+2021-01-28 15:29:39.052918 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.054095 (Thread-4): Compiling test.subsurface.not_null_d_premises_types_premises_code
+2021-01-28 15:29:39.054814 (Thread-1): Began running node test.subsurface.not_null_d_municipalities_municipality_code
+2021-01-28 15:29:39.055399 (Thread-2): Compiling test.subsurface.unique_d_premises_types_premises_code
+2021-01-28 15:29:39.057049 (Thread-3): Finished running node test.subsurface.unique_d_crop_types_crop_code
+2021-01-28 15:29:39.074382 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_d_municipalities_municipality_code".
+2021-01-28 15:29:39.102725 (Thread-3): Began running node test.subsurface.unique_d_municipalities_municipality_code
+2021-01-28 15:29:39.120814 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_d_premises_types_premises_code"
+2021-01-28 15:29:39.127090 (Thread-1): Compiling test.subsurface.not_null_d_municipalities_municipality_code
+2021-01-28 15:29:39.138612 (Thread-3): Acquiring new dremio connection "test.subsurface.unique_d_municipalities_municipality_code".
+2021-01-28 15:29:39.145769 (Thread-2): Writing injected SQL for node "test.subsurface.unique_d_premises_types_premises_code"
+2021-01-28 15:29:39.147635 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.164903 (Thread-3): Compiling test.subsurface.unique_d_municipalities_municipality_code
+2021-01-28 15:29:39.187190 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_d_municipalities_municipality_code"
+2021-01-28 15:29:39.188072 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.194900 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.208158 (Thread-4): Finished running node test.subsurface.not_null_d_premises_types_premises_code
+2021-01-28 15:29:39.219667 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.235288 (Thread-3): Writing injected SQL for node "test.subsurface.unique_d_municipalities_municipality_code"
+2021-01-28 15:29:39.235688 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.237639 (Thread-4): Began running node analysis.subsurface.most_expensive_departments_for_flats
+2021-01-28 15:29:39.239159 (Thread-2): Finished running node test.subsurface.unique_d_premises_types_premises_code
+2021-01-28 15:29:39.240686 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.242707 (Thread-4): Acquiring new dremio connection "analysis.subsurface.most_expensive_departments_for_flats".
+2021-01-28 15:29:39.243618 (Thread-2): Began running node analysis.subsurface.transactions_seasonality
+2021-01-28 15:29:39.244240 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.246143 (Thread-1): Finished running node test.subsurface.not_null_d_municipalities_municipality_code
+2021-01-28 15:29:39.247186 (Thread-4): Compiling analysis.subsurface.most_expensive_departments_for_flats
+2021-01-28 15:29:39.248293 (Thread-2): Acquiring new dremio connection "analysis.subsurface.transactions_seasonality".
+2021-01-28 15:29:39.248934 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.250204 (Thread-1): Began running node test.subsurface.not_null_f_land_values_built_surface
+2021-01-28 15:29:39.261795 (Thread-2): Compiling analysis.subsurface.transactions_seasonality
+2021-01-28 15:29:39.278234 (Thread-3): Finished running node test.subsurface.unique_d_municipalities_municipality_code
+2021-01-28 15:29:39.299773 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_built_surface".
+2021-01-28 15:29:39.308519 (Thread-4): Writing injected SQL for node "analysis.subsurface.most_expensive_departments_for_flats"
+2021-01-28 15:29:39.325182 (Thread-3): Began running node test.subsurface.not_null_f_land_values_crop_code
+2021-01-28 15:29:39.341265 (Thread-1): Compiling test.subsurface.not_null_f_land_values_built_surface
+2021-01-28 15:29:39.342057 (Thread-2): Writing injected SQL for node "analysis.subsurface.transactions_seasonality"
+2021-01-28 15:29:39.343821 (Thread-3): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_crop_code".
+2021-01-28 15:29:39.350171 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.377482 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.378623 (Thread-3): Compiling test.subsurface.not_null_f_land_values_crop_code
+2021-01-28 15:29:39.386531 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_f_land_values_built_surface"
+2021-01-28 15:29:39.387289 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.388624 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.401633 (Thread-4): Finished running node analysis.subsurface.most_expensive_departments_for_flats
+2021-01-28 15:29:39.408243 (Thread-2): Finished running node analysis.subsurface.transactions_seasonality
+2021-01-28 15:29:39.419690 (Thread-4): Began running node test.subsurface.not_null_f_land_values_land_surface
+2021-01-28 15:29:39.430908 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.435314 (Thread-3): Writing injected SQL for node "test.subsurface.not_null_f_land_values_crop_code"
+2021-01-28 15:29:39.435906 (Thread-2): Began running node test.subsurface.not_null_f_land_values_lane
+2021-01-28 15:29:39.437641 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_land_surface".
+2021-01-28 15:29:39.438251 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.441166 (Thread-4): Compiling test.subsurface.not_null_f_land_values_land_surface
+2021-01-28 15:29:39.441589 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.443717 (Thread-2): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_lane".
+2021-01-28 15:29:39.445040 (Thread-1): Finished running node test.subsurface.not_null_f_land_values_built_surface
+2021-01-28 15:29:39.461724 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.477736 (Thread-2): Compiling test.subsurface.not_null_f_land_values_lane
+2021-01-28 15:29:39.486038 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_f_land_values_land_surface"
+2021-01-28 15:29:39.487240 (Thread-1): Began running node test.subsurface.not_null_f_land_values_lane_code
+2021-01-28 15:29:39.489199 (Thread-3): Finished running node test.subsurface.not_null_f_land_values_crop_code
+2021-01-28 15:29:39.512109 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_lane_code".
+2021-01-28 15:29:39.524062 (Thread-3): Began running node test.subsurface.not_null_f_land_values_lane_type
+2021-01-28 15:29:39.531153 (Thread-2): Writing injected SQL for node "test.subsurface.not_null_f_land_values_lane"
+2021-01-28 15:29:39.532031 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.533207 (Thread-1): Compiling test.subsurface.not_null_f_land_values_lane_code
+2021-01-28 15:29:39.534578 (Thread-3): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_lane_type".
+2021-01-28 15:29:39.535729 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.553025 (Thread-3): Compiling test.subsurface.not_null_f_land_values_lane_type
+2021-01-28 15:29:39.560042 (Thread-4): Finished running node test.subsurface.not_null_f_land_values_land_surface
+2021-01-28 15:29:39.587400 (Thread-4): Began running node test.subsurface.not_null_f_land_values_lots_count
+2021-01-28 15:29:39.565913 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.591691 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_f_land_values_lane_code"
+2021-01-28 15:29:39.599099 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_lots_count".
+2021-01-28 15:29:39.605026 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.627674 (Thread-3): Writing injected SQL for node "test.subsurface.not_null_f_land_values_lane_type"
+2021-01-28 15:29:39.628410 (Thread-4): Compiling test.subsurface.not_null_f_land_values_lots_count
+2021-01-28 15:29:39.630071 (Thread-2): Finished running node test.subsurface.not_null_f_land_values_lane
+2021-01-28 15:29:39.631231 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.648805 (Thread-2): Began running node test.subsurface.not_null_f_land_values_main_rooms_count
+2021-01-28 15:29:39.665070 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.671883 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_f_land_values_lots_count"
+2021-01-28 15:29:39.672359 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.674242 (Thread-2): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_main_rooms_count".
+2021-01-28 15:29:39.675598 (Thread-1): Finished running node test.subsurface.not_null_f_land_values_lane_code
+2021-01-28 15:29:39.676766 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.678365 (Thread-2): Compiling test.subsurface.not_null_f_land_values_main_rooms_count
+2021-01-28 15:29:39.679174 (Thread-1): Began running node test.subsurface.not_null_f_land_values_municipality_code
+2021-01-28 15:29:39.679642 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.682065 (Thread-3): Finished running node test.subsurface.not_null_f_land_values_lane_type
+2021-01-28 15:29:39.693932 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_municipality_code".
+2021-01-28 15:29:39.699863 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.715763 (Thread-3): Began running node test.subsurface.not_null_f_land_values_premises_code
+2021-01-28 15:29:39.725017 (Thread-2): Writing injected SQL for node "test.subsurface.not_null_f_land_values_main_rooms_count"
+2021-01-28 15:29:39.725999 (Thread-1): Compiling test.subsurface.not_null_f_land_values_municipality_code
+2021-01-28 15:29:39.727294 (Thread-4): Finished running node test.subsurface.not_null_f_land_values_lots_count
+2021-01-28 15:29:39.740226 (Thread-4): Began running node test.subsurface.not_null_f_land_values_transaction_amount
+2021-01-28 15:29:39.728400 (Thread-3): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_premises_code".
+2021-01-28 15:29:39.741524 (Thread-4): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_transaction_amount".
+2021-01-28 15:29:39.752753 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.769583 (Thread-3): Compiling test.subsurface.not_null_f_land_values_premises_code
+2021-01-28 15:29:39.772080 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_f_land_values_municipality_code"
+2021-01-28 15:29:39.772757 (Thread-4): Compiling test.subsurface.not_null_f_land_values_transaction_amount
+2021-01-28 15:29:39.773414 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.839677 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.841692 (Thread-2): Finished running node test.subsurface.not_null_f_land_values_main_rooms_count
+2021-01-28 15:29:39.850065 (Thread-3): Writing injected SQL for node "test.subsurface.not_null_f_land_values_premises_code"
+2021-01-28 15:29:39.850703 (Thread-1): finished collecting timing info
+2021-01-28 15:29:39.857937 (Thread-4): Writing injected SQL for node "test.subsurface.not_null_f_land_values_transaction_amount"
+2021-01-28 15:29:39.858803 (Thread-2): Began running node test.subsurface.not_null_f_land_values_transaction_date
+2021-01-28 15:29:39.861773 (Thread-1): Finished running node test.subsurface.not_null_f_land_values_municipality_code
+2021-01-28 15:29:39.863407 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.865366 (Thread-2): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_transaction_date".
+2021-01-28 15:29:39.866425 (Thread-1): Began running node test.subsurface.not_null_f_land_values_transfer_label
+2021-01-28 15:29:39.867272 (Thread-3): finished collecting timing info
+2021-01-28 15:29:39.868341 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.869808 (Thread-2): Compiling test.subsurface.not_null_f_land_values_transaction_date
+2021-01-28 15:29:39.871069 (Thread-1): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_transfer_label".
+2021-01-28 15:29:39.872396 (Thread-3): Finished running node test.subsurface.not_null_f_land_values_premises_code
+2021-01-28 15:29:39.873067 (Thread-4): finished collecting timing info
+2021-01-28 15:29:39.890390 (Thread-1): Compiling test.subsurface.not_null_f_land_values_transfer_label
+2021-01-28 15:29:39.906323 (Thread-3): Began running node test.subsurface.not_null_f_land_values_zip_code
+2021-01-28 15:29:39.916054 (Thread-2): Writing injected SQL for node "test.subsurface.not_null_f_land_values_transaction_date"
+2021-01-28 15:29:39.917803 (Thread-4): Finished running node test.subsurface.not_null_f_land_values_transaction_amount
+2021-01-28 15:29:39.924837 (Thread-3): Acquiring new dremio connection "test.subsurface.not_null_f_land_values_zip_code".
+2021-01-28 15:29:39.931240 (Thread-4): Began running node test.subsurface.relationships_f_land_values_crop_code__crop_code__ref_d_crop_types_
+2021-01-28 15:29:39.932620 (Thread-3): Compiling test.subsurface.not_null_f_land_values_zip_code
+2021-01-28 15:29:39.948764 (Thread-2): finished collecting timing info
+2021-01-28 15:29:39.962078 (Thread-1): Writing injected SQL for node "test.subsurface.not_null_f_land_values_transfer_label"
+2021-01-28 15:29:39.962589 (Thread-4): Acquiring new dremio connection "test.subsurface.relationships_f_land_values_crop_code__crop_code__ref_d_crop_types_".
+2021-01-28 15:29:39.973710 (Thread-2): finished collecting timing info
+2021-01-28 15:29:40.001321 (Thread-4): Compiling test.subsurface.relationships_f_land_values_crop_code__crop_code__ref_d_crop_types_
+2021-01-28 15:29:40.003240 (Thread-3): Writing injected SQL for node "test.subsurface.not_null_f_land_values_zip_code"
+2021-01-28 15:29:40.004581 (Thread-2): Finished running node test.subsurface.not_null_f_land_values_transaction_date
+2021-01-28 15:29:40.010647 (Thread-1): finished collecting timing info
+2021-01-28 15:29:40.026970 (Thread-2): Began running node test.subsurface.relationships_f_land_values_municipality_code__municipality_code__ref_d_municipalities_
+2021-01-28 15:29:40.034017 (Thread-1): finished collecting timing info
+2021-01-28 15:29:40.035088 (Thread-3): finished collecting timing info
+2021-01-28 15:29:40.050753 (Thread-2): Acquiring new dremio connection "test.subsurface.relationships_f_land_values_municipality_code__municipality_code__ref_d_municipalities_".
+2021-01-28 15:29:40.057714 (Thread-1): Finished running node test.subsurface.not_null_f_land_values_transfer_label
+2021-01-28 15:29:40.060974 (Thread-4): Writing injected SQL for node "test.subsurface.relationships_f_land_values_crop_code__crop_code__ref_d_crop_types_"
+2021-01-28 15:29:40.061689 (Thread-3): finished collecting timing info
+2021-01-28 15:29:40.063167 (Thread-2): Compiling test.subsurface.relationships_f_land_values_municipality_code__municipality_code__ref_d_municipalities_
+2021-01-28 15:29:40.063931 (Thread-1): Began running node test.subsurface.relationships_f_land_values_premises_code__premises_code__ref_d_premises_types_
+2021-01-28 15:29:40.066026 (Thread-3): Finished running node test.subsurface.not_null_f_land_values_zip_code
+2021-01-28 15:29:40.073052 (Thread-1): Acquiring new dremio connection "test.subsurface.relationships_f_land_values_premises_code__premises_code__ref_d_premises_types_".
+2021-01-28 15:29:40.099048 (Thread-1): Compiling test.subsurface.relationships_f_land_values_premises_code__premises_code__ref_d_premises_types_
+2021-01-28 15:29:40.079218 (Thread-4): finished collecting timing info
+2021-01-28 15:29:40.115804 (Thread-4): finished collecting timing info
+2021-01-28 15:29:40.144290 (Thread-4): Finished running node test.subsurface.relationships_f_land_values_crop_code__crop_code__ref_d_crop_types_
+2021-01-28 15:29:40.164251 (Thread-2): Writing injected SQL for node "test.subsurface.relationships_f_land_values_municipality_code__municipality_code__ref_d_municipalities_"
+2021-01-28 15:29:40.175148 (Thread-1): Writing injected SQL for node "test.subsurface.relationships_f_land_values_premises_code__premises_code__ref_d_premises_types_"
+2021-01-28 15:29:40.176774 (Thread-2): finished collecting timing info
+2021-01-28 15:29:40.178045 (Thread-1): finished collecting timing info
+2021-01-28 15:29:40.179144 (Thread-2): finished collecting timing info
+2021-01-28 15:29:40.180304 (Thread-1): finished collecting timing info
+2021-01-28 15:29:40.182253 (Thread-2): Finished running node test.subsurface.relationships_f_land_values_municipality_code__municipality_code__ref_d_municipalities_
+2021-01-28 15:29:40.185122 (Thread-1): Finished running node test.subsurface.relationships_f_land_values_premises_code__premises_code__ref_d_premises_types_
+2021-01-28 15:29:40.229407 (MainThread): Connection 'master' was properly closed.
+2021-01-28 15:29:40.229909 (MainThread): Connection 'test.subsurface.relationships_f_land_values_premises_code__premises_code__ref_d_premises_types_' was properly closed.
+2021-01-28 15:29:40.230227 (MainThread): Connection 'test.subsurface.relationships_f_land_values_municipality_code__municipality_code__ref_d_municipalities_' was properly closed.
+2021-01-28 15:29:40.230563 (MainThread): Connection 'test.subsurface.relationships_f_land_values_crop_code__crop_code__ref_d_crop_types_' was properly closed.
+2021-01-28 15:29:40.230895 (MainThread): Connection 'test.subsurface.not_null_f_land_values_zip_code' was properly closed.
+2021-01-28 15:29:40.699910 (MainThread): 16:29:40 | Done.
+2021-01-28 15:29:40.707308 (MainThread): Acquiring new dremio connection "generate_catalog".
+2021-01-28 15:29:40.707535 (MainThread): 16:29:40 | Building catalog
+2021-01-28 15:29:41.237570 (ThreadPoolExecutor-1_0): Acquiring new dremio connection "@fab4.information_schema".
+2021-01-28 15:29:41.239023 (ThreadPoolExecutor-1_1): Acquiring new dremio connection "fs.information_schema".
+2021-01-28 15:29:41.289411 (ThreadPoolExecutor-1_0): Using dremio connection "@fab4.information_schema".
+2021-01-28 15:29:41.290292 (ThreadPoolExecutor-1_1): Using dremio connection "fs.information_schema".
+2021-01-28 15:29:41.290703 (ThreadPoolExecutor-1_0): On @fab4.information_schema: with cols(table_database,
+    table_schema,
+    table_name,
+    table_type,
+    table_comment,
+    column_name,
+    column_index,
+    column_type,
+    column_comment,
+    table_owner) as (
+  select lower(case when position('.' in columns.table_schema) > 0
+        then substring(columns.table_schema, 1, position('.' in columns.table_schema) - 1)
+        else columns.table_schema
+    end)
+    ,lower(case when position('.' in columns.table_schema) > 0
+        then substring(columns.table_schema, position('.' in columns.table_schema) + 1)
+        else 'no_schema'
+    end)
+    ,lower(columns.table_name)
+    ,lower(t.table_type)
+    ,cast(null as varchar)
+    ,lower(column_name)
+    ,ordinal_position
+    ,lower(data_type)
+    ,cast(null as varchar)
+    ,cast(null as varchar)
+  from information_schema.columns
+      join information_schema."tables" as t
+          on (t.table_schema = columns.table_schema
+              and t.table_name = columns.table_name)
+  union all
+  select
+    lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+    ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+    ,lower(name)
+    ,'materializedview'
+    ,initcap(type) || ' Reflection'
+    ,lower(column_name)
+    ,ordinal_position
+    ,lower(data_type)
+    ,case
+        when strpos(',' || replace(displayColumns, ' ', '') || ',', ',' || column_name || ',') > 0 then 'Display'
+        when strpos(',' || replace(dimensions, ' ', '') || ',', ',' || column_name || ',') > 0 then 'Dimension'
+        when strpos(',' || replace(measures, ' ', '') || ',', ',' || column_name || ',') > 0 then 'Measure'
+    end
+    || case
+        when strpos(',' || replace(sortColumns, ' ', '') || ',', ',' || column_name || ',') > 0 then ', Sort'
+        else ''
+    end
+    || case
+        when strpos(',' || replace(partitionColumns, ' ', '') || ',', ',' || column_name || ',') > 0 then ', Partition'
+        else ''
+    end
+    || case
+        when strpos(',' || replace(distributionColumns, ' ', '') || ',', ',' || column_name || ',') > 0 then ', Distribute'
+        else ''
+    end
+    ,cast(null as varchar)
+  from sys.reflections
+  join information_schema.columns
+      on (columns.table_schema || '.' || columns.table_name = replace(dataset, '"', '')
+          and (strpos(',' || replace(displayColumns, ' ', '') || ',', ',' || column_name || ',') > 0
+              or strpos(',' || replace(dimensions, ' ', '') || ',', ',' || column_name || ',') > 0
+              or strpos(',' || replace(measures, ' ', '') || ',', ',' || column_name || ',') > 0))
+  )
+  select *
+  from cols
+  where table_type <> 'SYSTEM_TABLE'
+    and table_database = lower('@fab4')
+    and (table_schema = lower('no_schema'))
+  order by
+      table_schema,
+      table_name,
+      column_index
+2021-01-28 15:29:41.291161 (ThreadPoolExecutor-1_1): On fs.information_schema: with cols(table_database,
+    table_schema,
+    table_name,
+    table_type,
+    table_comment,
+    column_name,
+    column_index,
+    column_type,
+    column_comment,
+    table_owner) as (
+  select lower(case when position('.' in columns.table_schema) > 0
+        then substring(columns.table_schema, 1, position('.' in columns.table_schema) - 1)
+        else columns.table_schema
+    end)
+    ,lower(case when position('.' in columns.table_schema) > 0
+        then substring(columns.table_schema, position('.' in columns.table_schema) + 1)
+        else 'no_schema'
+    end)
+    ,lower(columns.table_name)
+    ,lower(t.table_type)
+    ,cast(null as varchar)
+    ,lower(column_name)
+    ,ordinal_position
+    ,lower(data_type)
+    ,cast(null as varchar)
+    ,cast(null as varchar)
+  from information_schema.columns
+      join information_schema."tables" as t
+          on (t.table_schema = columns.table_schema
+              and t.table_name = columns.table_name)
+  union all
+  select
+    lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+    ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+    ,lower(name)
+    ,'materializedview'
+    ,initcap(type) || ' Reflection'
+    ,lower(column_name)
+    ,ordinal_position
+    ,lower(data_type)
+    ,case
+        when strpos(',' || replace(displayColumns, ' ', '') || ',', ',' || column_name || ',') > 0 then 'Display'
+        when strpos(',' || replace(dimensions, ' ', '') || ',', ',' || column_name || ',') > 0 then 'Dimension'
+        when strpos(',' || replace(measures, ' ', '') || ',', ',' || column_name || ',') > 0 then 'Measure'
+    end
+    || case
+        when strpos(',' || replace(sortColumns, ' ', '') || ',', ',' || column_name || ',') > 0 then ', Sort'
+        else ''
+    end
+    || case
+        when strpos(',' || replace(partitionColumns, ' ', '') || ',', ',' || column_name || ',') > 0 then ', Partition'
+        else ''
+    end
+    || case
+        when strpos(',' || replace(distributionColumns, ' ', '') || ',', ',' || column_name || ',') > 0 then ', Distribute'
+        else ''
+    end
+    ,cast(null as varchar)
+  from sys.reflections
+  join information_schema.columns
+      on (columns.table_schema || '.' || columns.table_name = replace(dataset, '"', '')
+          and (strpos(',' || replace(displayColumns, ' ', '') || ',', ',' || column_name || ',') > 0
+              or strpos(',' || replace(dimensions, ' ', '') || ',', ',' || column_name || ',') > 0
+              or strpos(',' || replace(measures, ' ', '') || ',', ',' || column_name || ',') > 0))
+  )
+  select *
+  from cols
+  where table_type <> 'SYSTEM_TABLE'
+    and table_database = lower('fs')
+    and (table_schema = lower('geo') or table_schema = lower('no_schema'))
+  order by
+      table_schema,
+      table_name,
+      column_index
+2021-01-28 15:29:41.291701 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-01-28 15:29:41.292123 (ThreadPoolExecutor-1_1): Opening a new connection, currently in state init
+2021-01-28 15:29:41.292582 (ThreadPoolExecutor-1_0): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:29:41.293161 (ThreadPoolExecutor-1_1): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:29:41.714722 (ThreadPoolExecutor-1_0): Connected to db: None
+2021-01-28 15:29:41.715147 (ThreadPoolExecutor-1_1): Connected to db: None
+2021-01-28 15:29:45.737785 (ThreadPoolExecutor-1_1): SQL status: OK in 4.45 seconds
+2021-01-28 15:29:45.741328 (ThreadPoolExecutor-1_1): On fs.information_schema: ROLLBACK
+2021-01-28 15:29:45.741576 (ThreadPoolExecutor-1_1): On fs.information_schema: Close
+2021-01-28 15:29:45.830948 (ThreadPoolExecutor-1_0): SQL status: OK in 4.54 seconds
+2021-01-28 15:29:45.905502 (ThreadPoolExecutor-1_0): On @fab4.information_schema: ROLLBACK
+2021-01-28 15:29:45.905931 (ThreadPoolExecutor-1_0): On @fab4.information_schema: Close
+2021-01-28 15:29:46.408737 (MainThread): 16:29:46 | Catalog written to /root/git/subsurface/target/catalog.json
+2021-01-28 15:29:46.409362 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21a42a47b8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f219201ae48>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f219201a128>]}
+2021-01-28 15:29:46.409866 (MainThread): Flushing usage events
+2021-01-28 15:29:46.990685 (MainThread): Connection 'generate_catalog' was properly closed.
+2021-01-28 15:29:46.992103 (MainThread): Connection '@fab4.information_schema' was properly closed.
+2021-01-28 15:29:46.992466 (MainThread): Connection 'fs.information_schema' was properly closed.
+2021-01-28 15:29:57.955621 (MainThread): Running with dbt=0.18.1
+2021-01-28 15:29:58.071859 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.serve.ServeTask'>, debug=False, defer=None, log_cache_events=False, log_format='default', open_browser=True, partial_parse=None, port=8080, profile=None, profiles_dir='/root/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target='unmanaged', test_new_parser=False, use_cache=True, use_colors=None, vars='{}', warn_error=False, which='serve', write_json=True)
+2021-01-28 15:29:58.073864 (MainThread): Tracking: tracking
+2021-01-28 15:29:58.089407 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f468127bef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4681282cf8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4681282358>]}
+2021-01-28 15:29:58.094927 (MainThread): Serving docs at 0.0.0.0:8080
+2021-01-28 15:29:58.095234 (MainThread): To access from your browser, navigate to:  http://localhost:8080
+2021-01-28 15:29:58.095403 (MainThread): Press Ctrl+C to exit.
+
+
+2021-01-28 15:29:58.102081 (MainThread): subprocess 8919 is still running
+2021-01-28 15:30:42.938278 (MainThread): Flushing usage events
+2021-01-28 15:30:43.651086 (MainThread): ctrl-c
+2021-01-28 15:45:05.848534 (MainThread): Running with dbt=0.18.1
+2021-01-28 15:45:05.966978 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/root/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target='unmanaged', test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-01-28 15:45:05.969655 (MainThread): Tracking: tracking
+2021-01-28 15:45:05.991413 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56fd3ae780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f570e5c8128>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f570e5c6438>]}
+2021-01-28 15:45:06.096564 (MainThread): Partial parsing not enabled
+2021-01-28 15:45:06.099636 (MainThread): Parsing macros/get_custom_database.sql
+2021-01-28 15:45:06.110865 (MainThread): Parsing macros/get_custom_schema.sql
+2021-01-28 15:45:06.115141 (MainThread): Parsing macros/non_regression_test.sql
+2021-01-28 15:45:06.154735 (MainThread): Parsing macros/catalog.sql
+2021-01-28 15:45:06.159399 (MainThread): Parsing macros/adapters.sql
+2021-01-28 15:45:06.204314 (MainThread): Parsing macros/helpers.sql
+2021-01-28 15:45:06.237328 (MainThread): Parsing macros/get_custom_database.sql
+2021-01-28 15:45:06.241220 (MainThread): Parsing macros/get_custom_schema.sql
+2021-01-28 15:45:06.243415 (MainThread): Parsing macros/drop_orphaned_tables.sql
+2021-01-28 15:45:06.248986 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-01-28 15:45:06.276810 (MainThread): Parsing macros/materializations/view/view.sql
+2021-01-28 15:45:06.285325 (MainThread): Parsing macros/materializations/table/table.sql
+2021-01-28 15:45:06.297083 (MainThread): Parsing macros/materializations/file/file.sql
+2021-01-28 15:45:06.310883 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-01-28 15:45:06.338178 (MainThread): Parsing macros/materializations/raw_reflection/raw_reflection.sql
+2021-01-28 15:45:06.353153 (MainThread): Parsing macros/materializations/aggregation_reflection/aggregation_reflection.sql
+2021-01-28 15:45:06.371809 (MainThread): Parsing macros/operations/drop_orphan_tables.sql
+2021-01-28 15:45:06.373993 (MainThread): Parsing macros/core.sql
+2021-01-28 15:45:06.381843 (MainThread): Parsing macros/adapters/common.sql
+2021-01-28 15:45:06.463160 (MainThread): Parsing macros/etc/datetime.sql
+2021-01-28 15:45:06.480350 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-01-28 15:45:06.482351 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-01-28 15:45:06.485764 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-01-28 15:45:06.489954 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-01-28 15:45:06.493215 (MainThread): Parsing macros/etc/query.sql
+2021-01-28 15:45:06.495417 (MainThread): Parsing macros/materializations/helpers.sql
+2021-01-28 15:45:06.566188 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-01-28 15:45:06.592691 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-01-28 15:45:06.596727 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-01-28 15:45:06.609245 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-01-28 15:45:06.650306 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-28 15:45:06.701594 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-28 15:45:06.705075 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-28 15:45:06.738338 (MainThread): Parsing macros/materializations/table/table.sql
+2021-01-28 15:45:06.751188 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-28 15:45:06.761603 (MainThread): Parsing macros/materializations/view/view.sql
+2021-01-28 15:45:06.774020 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-01-28 15:45:06.779511 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-01-28 15:45:06.782576 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-01-28 15:45:06.786120 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-01-28 15:45:06.799975 (MainThread): Partial parsing not enabled
+2021-01-28 15:45:06.881075 (MainThread): Acquiring new dremio connection "model.subsurface.d_crop_types".
+2021-01-28 15:45:06.926211 (MainThread): Acquiring new dremio connection "model.subsurface.d_municipalities".
+2021-01-28 15:45:06.948591 (MainThread): Acquiring new dremio connection "model.subsurface.d_premises_types".
+2021-01-28 15:45:06.971575 (MainThread): Acquiring new dremio connection "model.subsurface.f_land_values".
+2021-01-28 15:45:06.995194 (MainThread): Acquiring new dremio connection "model.subsurface.stg__land_values".
+2021-01-28 15:45:07.027294 (MainThread): Acquiring new dremio connection "model.subsurface.stg__municipalities".
+2021-01-28 15:45:07.090752 (MainThread): Acquiring new dremio connection "analysis.subsurface.most_expensive_departments_for_flats".
+2021-01-28 15:45:07.142146 (MainThread): Acquiring new dremio connection "analysis.subsurface.transactions_seasonality".
+2021-01-28 15:45:07.214327 (MainThread): Acquiring new dremio connection "test.subsurface.stg__land_values_built_surface_implies_premises_code".
+2021-01-28 15:45:07.259945 (MainThread): Acquiring new dremio connection "test.subsurface.stg__land_values_land_surface_implies_crop_code".
+2021-01-28 15:45:09.096296 (MainThread): WARNING: Found documentation for resource "most_expansive_departments_for_flats" which was not found or is disabled
+2021-01-28 15:45:09.670389 (MainThread): Found 6 models, 48 tests, 0 snapshots, 2 analyses, 167 macros, 0 operations, 3 seed files, 2 sources
+2021-01-28 15:45:09.675177 (MainThread): 
+2021-01-28 15:45:09.675822 (MainThread): Acquiring new dremio connection "master".
+2021-01-28 15:45:09.684620 (ThreadPoolExecutor-0_0): Acquiring new dremio connection "list_@fab4".
+2021-01-28 15:45:09.727829 (ThreadPoolExecutor-0_0): Using dremio connection "list_@fab4".
+2021-01-28 15:45:09.728189 (ThreadPoolExecutor-0_0): On list_@fab4: 
+    
+    with schemata as (
+        select lower(case when position('.' in schema_name) > 0
+                then substring(schema_name, 1, position('.' in schema_name) - 1)
+                else schema_name
+            end) as catalog_name
+            ,lower(case when position('.' in schema_name) > 0
+                then substring(schema_name, position('.' in schema_name) + 1)
+                else 'no_schema'
+            end) as schema_name
+        from information_schema.schemata
+    )
+    select distinct schema_name
+    from schemata
+    where ilike(catalog_name, '@fab4')
+      -- and schema_name <> 'no_schema'
+  
+  
+2021-01-28 15:45:09.728524 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-01-28 15:45:09.728810 (ThreadPoolExecutor-0_0): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:10.086209 (ThreadPoolExecutor-0_0): Connected to db: None
+2021-01-28 15:45:11.132065 (ThreadPoolExecutor-0_0): SQL status: OK in 1.40 seconds
+2021-01-28 15:45:11.167164 (ThreadPoolExecutor-0_0): On list_@fab4: Close
+2021-01-28 15:45:11.358710 (ThreadPoolExecutor-1_0): Acquiring new dremio connection "list_@fab4_no_schema".
+2021-01-28 15:45:11.384239 (ThreadPoolExecutor-1_0): Using dremio connection "list_@fab4_no_schema".
+2021-01-28 15:45:11.384694 (ThreadPoolExecutor-1_0): On list_@fab4_no_schema: with t1(table_catalog, table_name, table_schema, table_type) as (
+    select lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+        ,lower(table_name)
+        ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+        ,lower(table_type)
+    from information_schema."tables"
+    )
+    ,r1(identifier_position, database_end_position, dataset, name, type) as (
+        select
+            case when "RIGHT"(dataset, 1) = '"'
+                then length(dataset) - strpos(substr(reverse(dataset), 2), '"')
+                else length(dataset) - strpos(reverse(dataset), '.') + 2
+            end
+            ,case when "LEFT"(dataset, 1) = '"'
+                then strpos(substr(dataset, 2), '"') + 1
+                else strpos(dataset, '.') - 1
+            end
+            ,dataset
+            ,name
+            ,type
+        from sys.reflections
+    )
+    ,r2(table_catalog, table_name, table_schema, table_type) as (
+    select
+        lower(replace(substr(dataset, 1, database_end_position), '"', ''))
+        ,lower(name)
+        ,case when identifier_position - database_end_position > 2
+            then lower(replace(substr(dataset, database_end_position + 2, identifier_position - database_end_position - 3), '"', ''))
+            else 'no_schema'
+        end
+        -- ,lower(type) || 'reflection'
+        ,'materializedview'
+--        ,replace(substr(dataset, identifier_position), '"', '') as identifier
+    from r1
+    )
+    ,u(table_catalog, table_name, table_schema, table_type) as (
+      select *
+      from t1
+      union all
+      select *
+      from r2
+    )
+
+    select *
+    from u
+    where ilike(table_catalog, '@fab4')
+      and ilike(table_schema, 'no_schema')
+      and table_type <> 'system_table'
+  
+2021-01-28 15:45:11.385022 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-01-28 15:45:11.385315 (ThreadPoolExecutor-1_0): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:11.610423 (ThreadPoolExecutor-1_0): Connected to db: None
+2021-01-28 15:45:12.084103 (ThreadPoolExecutor-1_0): SQL status: OK in 0.70 seconds
+2021-01-28 15:45:12.131720 (ThreadPoolExecutor-1_0): On list_@fab4_no_schema: ROLLBACK
+2021-01-28 15:45:12.132129 (ThreadPoolExecutor-1_0): On list_@fab4_no_schema: Close
+2021-01-28 15:45:12.134811 (MainThread): 16:45:12 | Concurrency: 4 threads (target='unmanaged')
+2021-01-28 15:45:12.135116 (MainThread): 16:45:12 | 
+2021-01-28 15:45:12.142315 (Thread-1): Began running node seed.subsurface.crop_types
+2021-01-28 15:45:12.144837 (Thread-1): 16:45:12 | 1 of 3 START seed file @fab4.crop_types.............................. [RUN]
+2021-01-28 15:45:12.145784 (Thread-1): Acquiring new dremio connection "seed.subsurface.crop_types".
+2021-01-28 15:45:12.146064 (Thread-1): finished collecting timing info
+2021-01-28 15:45:12.152872 (Thread-3): Began running node seed.subsurface.premises_types
+2021-01-28 15:45:12.158712 (Thread-2): Began running node seed.subsurface.transfer_types
+2021-01-28 15:45:12.161195 (Thread-3): 16:45:12 | 2 of 3 START seed file @fab4.premises_types.......................... [RUN]
+2021-01-28 15:45:12.177602 (Thread-2): 16:45:12 | 3 of 3 START seed file @fab4.transfer_types.......................... [RUN]
+2021-01-28 15:45:12.194391 (Thread-3): Acquiring new dremio connection "seed.subsurface.premises_types".
+2021-01-28 15:45:12.210971 (Thread-3): finished collecting timing info
+2021-01-28 15:45:12.222991 (Thread-2): Acquiring new dremio connection "seed.subsurface.transfer_types".
+2021-01-28 15:45:12.245253 (Thread-2): finished collecting timing info
+2021-01-28 15:45:12.328869 (Thread-1): On "seed.subsurface.crop_types": cache miss for schema "$scratch.dbt.@fab4", this is inefficient
+2021-01-28 15:45:12.331048 (Thread-3): On "seed.subsurface.premises_types": cache miss for schema "$scratch.dbt.@fab4", this is inefficient
+2021-01-28 15:45:12.353109 (Thread-1): Using dremio connection "seed.subsurface.crop_types".
+2021-01-28 15:45:12.354960 (Thread-3): Using dremio connection "seed.subsurface.premises_types".
+2021-01-28 15:45:12.355397 (Thread-1): On seed.subsurface.crop_types: with t1(table_catalog, table_name, table_schema, table_type) as (
+    select lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+        ,lower(table_name)
+        ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+        ,lower(table_type)
+    from information_schema."tables"
+    )
+    ,r1(identifier_position, database_end_position, dataset, name, type) as (
+        select
+            case when "RIGHT"(dataset, 1) = '"'
+                then length(dataset) - strpos(substr(reverse(dataset), 2), '"')
+                else length(dataset) - strpos(reverse(dataset), '.') + 2
+            end
+            ,case when "LEFT"(dataset, 1) = '"'
+                then strpos(substr(dataset, 2), '"') + 1
+                else strpos(dataset, '.') - 1
+            end
+            ,dataset
+            ,name
+            ,type
+        from sys.reflections
+    )
+    ,r2(table_catalog, table_name, table_schema, table_type) as (
+    select
+        lower(replace(substr(dataset, 1, database_end_position), '"', ''))
+        ,lower(name)
+        ,case when identifier_position - database_end_position > 2
+            then lower(replace(substr(dataset, database_end_position + 2, identifier_position - database_end_position - 3), '"', ''))
+            else 'no_schema'
+        end
+        -- ,lower(type) || 'reflection'
+        ,'materializedview'
+--        ,replace(substr(dataset, identifier_position), '"', '') as identifier
+    from r1
+    )
+    ,u(table_catalog, table_name, table_schema, table_type) as (
+      select *
+      from t1
+      union all
+      select *
+      from r2
+    )
+
+    select *
+    from u
+    where ilike(table_catalog, '$scratch')
+      and ilike(table_schema, 'dbt.@fab4')
+      and table_type <> 'system_table'
+  
+2021-01-28 15:45:12.358973 (Thread-1): Opening a new connection, currently in state closed
+2021-01-28 15:45:12.358509 (Thread-3): On seed.subsurface.premises_types: with t1(table_catalog, table_name, table_schema, table_type) as (
+    select lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+        ,lower(table_name)
+        ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+        ,lower(table_type)
+    from information_schema."tables"
+    )
+    ,r1(identifier_position, database_end_position, dataset, name, type) as (
+        select
+            case when "RIGHT"(dataset, 1) = '"'
+                then length(dataset) - strpos(substr(reverse(dataset), 2), '"')
+                else length(dataset) - strpos(reverse(dataset), '.') + 2
+            end
+            ,case when "LEFT"(dataset, 1) = '"'
+                then strpos(substr(dataset, 2), '"') + 1
+                else strpos(dataset, '.') - 1
+            end
+            ,dataset
+            ,name
+            ,type
+        from sys.reflections
+    )
+    ,r2(table_catalog, table_name, table_schema, table_type) as (
+    select
+        lower(replace(substr(dataset, 1, database_end_position), '"', ''))
+        ,lower(name)
+        ,case when identifier_position - database_end_position > 2
+            then lower(replace(substr(dataset, database_end_position + 2, identifier_position - database_end_position - 3), '"', ''))
+            else 'no_schema'
+        end
+        -- ,lower(type) || 'reflection'
+        ,'materializedview'
+--        ,replace(substr(dataset, identifier_position), '"', '') as identifier
+    from r1
+    )
+    ,u(table_catalog, table_name, table_schema, table_type) as (
+      select *
+      from t1
+      union all
+      select *
+      from r2
+    )
+
+    select *
+    from u
+    where ilike(table_catalog, '$scratch')
+      and ilike(table_schema, 'dbt.@fab4')
+      and table_type <> 'system_table'
+  
+2021-01-28 15:45:12.359338 (Thread-1): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:12.358143 (Thread-2): On "seed.subsurface.transfer_types": cache miss for schema "$scratch.dbt.@fab4", this is inefficient
+2021-01-28 15:45:12.369271 (Thread-2): Using dremio connection "seed.subsurface.transfer_types".
+2021-01-28 15:45:12.369593 (Thread-2): On seed.subsurface.transfer_types: with t1(table_catalog, table_name, table_schema, table_type) as (
+    select lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+        ,lower(table_name)
+        ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+        ,lower(table_type)
+    from information_schema."tables"
+    )
+    ,r1(identifier_position, database_end_position, dataset, name, type) as (
+        select
+            case when "RIGHT"(dataset, 1) = '"'
+                then length(dataset) - strpos(substr(reverse(dataset), 2), '"')
+                else length(dataset) - strpos(reverse(dataset), '.') + 2
+            end
+            ,case when "LEFT"(dataset, 1) = '"'
+                then strpos(substr(dataset, 2), '"') + 1
+                else strpos(dataset, '.') - 1
+            end
+            ,dataset
+            ,name
+            ,type
+        from sys.reflections
+    )
+    ,r2(table_catalog, table_name, table_schema, table_type) as (
+    select
+        lower(replace(substr(dataset, 1, database_end_position), '"', ''))
+        ,lower(name)
+        ,case when identifier_position - database_end_position > 2
+            then lower(replace(substr(dataset, database_end_position + 2, identifier_position - database_end_position - 3), '"', ''))
+            else 'no_schema'
+        end
+        -- ,lower(type) || 'reflection'
+        ,'materializedview'
+--        ,replace(substr(dataset, identifier_position), '"', '') as identifier
+    from r1
+    )
+    ,u(table_catalog, table_name, table_schema, table_type) as (
+      select *
+      from t1
+      union all
+      select *
+      from r2
+    )
+
+    select *
+    from u
+    where ilike(table_catalog, '$scratch')
+      and ilike(table_schema, 'dbt.@fab4')
+      and table_type <> 'system_table'
+  
+2021-01-28 15:45:12.369814 (Thread-2): Opening a new connection, currently in state init
+2021-01-28 15:45:12.370043 (Thread-2): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:12.359743 (Thread-3): Opening a new connection, currently in state init
+2021-01-28 15:45:12.370331 (Thread-3): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:12.964106 (Thread-1): Connected to db: None
+2021-01-28 15:45:12.986911 (Thread-3): Connected to db: None
+2021-01-28 15:45:13.023177 (Thread-2): Connected to db: None
+2021-01-28 15:45:13.648222 (Thread-1): SQL status: OK in 1.29 seconds
+2021-01-28 15:45:13.650063 (Thread-3): SQL status: OK in 1.29 seconds
+2021-01-28 15:45:13.655671 (Thread-2): SQL status: OK in 1.29 seconds
+2021-01-28 15:45:13.705273 (Thread-1): with database=$scratch, schema=dbt.@fab4, relations=[<DremioRelation "$scratch"."dbt"."@fab4"."crop_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."premises_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."transfer_types_green">]
+2021-01-28 15:45:13.705977 (Thread-1): On "seed.subsurface.crop_types": cache miss for schema "$scratch.dbt.@fab4", this is inefficient
+2021-01-28 15:45:13.711918 (Thread-1): Using dremio connection "seed.subsurface.crop_types".
+2021-01-28 15:45:13.712167 (Thread-1): On seed.subsurface.crop_types: with t1(table_catalog, table_name, table_schema, table_type) as (
+    select lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+        ,lower(table_name)
+        ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+        ,lower(table_type)
+    from information_schema."tables"
+    )
+    ,r1(identifier_position, database_end_position, dataset, name, type) as (
+        select
+            case when "RIGHT"(dataset, 1) = '"'
+                then length(dataset) - strpos(substr(reverse(dataset), 2), '"')
+                else length(dataset) - strpos(reverse(dataset), '.') + 2
+            end
+            ,case when "LEFT"(dataset, 1) = '"'
+                then strpos(substr(dataset, 2), '"') + 1
+                else strpos(dataset, '.') - 1
+            end
+            ,dataset
+            ,name
+            ,type
+        from sys.reflections
+    )
+    ,r2(table_catalog, table_name, table_schema, table_type) as (
+    select
+        lower(replace(substr(dataset, 1, database_end_position), '"', ''))
+        ,lower(name)
+        ,case when identifier_position - database_end_position > 2
+            then lower(replace(substr(dataset, database_end_position + 2, identifier_position - database_end_position - 3), '"', ''))
+            else 'no_schema'
+        end
+        -- ,lower(type) || 'reflection'
+        ,'materializedview'
+--        ,replace(substr(dataset, identifier_position), '"', '') as identifier
+    from r1
+    )
+    ,u(table_catalog, table_name, table_schema, table_type) as (
+      select *
+      from t1
+      union all
+      select *
+      from r2
+    )
+
+    select *
+    from u
+    where ilike(table_catalog, '$scratch')
+      and ilike(table_schema, 'dbt.@fab4')
+      and table_type <> 'system_table'
+  
+2021-01-28 15:45:13.734027 (Thread-3): with database=$scratch, schema=dbt.@fab4, relations=[<DremioRelation "$scratch"."dbt"."@fab4"."crop_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."premises_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."transfer_types_green">]
+2021-01-28 15:45:13.734817 (Thread-3): On "seed.subsurface.premises_types": cache miss for schema "$scratch.dbt.@fab4", this is inefficient
+2021-01-28 15:45:13.740203 (Thread-3): Using dremio connection "seed.subsurface.premises_types".
+2021-01-28 15:45:13.740422 (Thread-3): On seed.subsurface.premises_types: with t1(table_catalog, table_name, table_schema, table_type) as (
+    select lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+        ,lower(table_name)
+        ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+        ,lower(table_type)
+    from information_schema."tables"
+    )
+    ,r1(identifier_position, database_end_position, dataset, name, type) as (
+        select
+            case when "RIGHT"(dataset, 1) = '"'
+                then length(dataset) - strpos(substr(reverse(dataset), 2), '"')
+                else length(dataset) - strpos(reverse(dataset), '.') + 2
+            end
+            ,case when "LEFT"(dataset, 1) = '"'
+                then strpos(substr(dataset, 2), '"') + 1
+                else strpos(dataset, '.') - 1
+            end
+            ,dataset
+            ,name
+            ,type
+        from sys.reflections
+    )
+    ,r2(table_catalog, table_name, table_schema, table_type) as (
+    select
+        lower(replace(substr(dataset, 1, database_end_position), '"', ''))
+        ,lower(name)
+        ,case when identifier_position - database_end_position > 2
+            then lower(replace(substr(dataset, database_end_position + 2, identifier_position - database_end_position - 3), '"', ''))
+            else 'no_schema'
+        end
+        -- ,lower(type) || 'reflection'
+        ,'materializedview'
+--        ,replace(substr(dataset, identifier_position), '"', '') as identifier
+    from r1
+    )
+    ,u(table_catalog, table_name, table_schema, table_type) as (
+      select *
+      from t1
+      union all
+      select *
+      from r2
+    )
+
+    select *
+    from u
+    where ilike(table_catalog, '$scratch')
+      and ilike(table_schema, 'dbt.@fab4')
+      and table_type <> 'system_table'
+  
+2021-01-28 15:45:13.748101 (Thread-2): with database=$scratch, schema=dbt.@fab4, relations=[<DremioRelation "$scratch"."dbt"."@fab4"."crop_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."premises_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."transfer_types_green">]
+2021-01-28 15:45:13.748729 (Thread-2): On "seed.subsurface.transfer_types": cache miss for schema "$scratch.dbt.@fab4", this is inefficient
+2021-01-28 15:45:13.754059 (Thread-2): Using dremio connection "seed.subsurface.transfer_types".
+2021-01-28 15:45:13.754270 (Thread-2): On seed.subsurface.transfer_types: with t1(table_catalog, table_name, table_schema, table_type) as (
+    select lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+        ,lower(table_name)
+        ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+        ,lower(table_type)
+    from information_schema."tables"
+    )
+    ,r1(identifier_position, database_end_position, dataset, name, type) as (
+        select
+            case when "RIGHT"(dataset, 1) = '"'
+                then length(dataset) - strpos(substr(reverse(dataset), 2), '"')
+                else length(dataset) - strpos(reverse(dataset), '.') + 2
+            end
+            ,case when "LEFT"(dataset, 1) = '"'
+                then strpos(substr(dataset, 2), '"') + 1
+                else strpos(dataset, '.') - 1
+            end
+            ,dataset
+            ,name
+            ,type
+        from sys.reflections
+    )
+    ,r2(table_catalog, table_name, table_schema, table_type) as (
+    select
+        lower(replace(substr(dataset, 1, database_end_position), '"', ''))
+        ,lower(name)
+        ,case when identifier_position - database_end_position > 2
+            then lower(replace(substr(dataset, database_end_position + 2, identifier_position - database_end_position - 3), '"', ''))
+            else 'no_schema'
+        end
+        -- ,lower(type) || 'reflection'
+        ,'materializedview'
+--        ,replace(substr(dataset, identifier_position), '"', '') as identifier
+    from r1
+    )
+    ,u(table_catalog, table_name, table_schema, table_type) as (
+      select *
+      from t1
+      union all
+      select *
+      from r2
+    )
+
+    select *
+    from u
+    where ilike(table_catalog, '$scratch')
+      and ilike(table_schema, 'dbt.@fab4')
+      and table_type <> 'system_table'
+  
+2021-01-28 15:45:14.336127 (Thread-1): SQL status: OK in 0.62 seconds
+2021-01-28 15:45:14.349331 (Thread-2): SQL status: OK in 0.59 seconds
+2021-01-28 15:45:14.404604 (Thread-3): SQL status: OK in 0.66 seconds
+2021-01-28 15:45:14.406490 (Thread-2): with database=$scratch, schema=dbt.@fab4, relations=[<DremioRelation "$scratch"."dbt"."@fab4"."crop_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."premises_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."transfer_types_green">]
+2021-01-28 15:45:14.416652 (Thread-1): with database=$scratch, schema=dbt.@fab4, relations=[<DremioRelation "$scratch"."dbt"."@fab4"."crop_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."premises_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."transfer_types_green">]
+2021-01-28 15:45:14.449562 (Thread-2): Using dremio connection "seed.subsurface.transfer_types".
+2021-01-28 15:45:14.449927 (Thread-2): On seed.subsurface.transfer_types: drop table if exists "$scratch"."dbt"."@fab4"."transfer_types_blue"
+2021-01-28 15:45:14.453025 (Thread-1): Using dremio connection "seed.subsurface.crop_types".
+2021-01-28 15:45:14.453244 (Thread-1): On seed.subsurface.crop_types: drop table if exists "$scratch"."dbt"."@fab4"."crop_types_blue"
+2021-01-28 15:45:14.465983 (Thread-3): with database=$scratch, schema=dbt.@fab4, relations=[<DremioRelation "$scratch"."dbt"."@fab4"."crop_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."premises_types_green">, <DremioRelation "$scratch"."dbt"."@fab4"."transfer_types_green">]
+2021-01-28 15:45:14.471941 (Thread-3): Using dremio connection "seed.subsurface.premises_types".
+2021-01-28 15:45:14.472248 (Thread-3): On seed.subsurface.premises_types: drop table if exists "$scratch"."dbt"."@fab4"."premises_types_blue"
+2021-01-28 15:45:14.532863 (Thread-1): SQL status: OK in 0.08 seconds
+2021-01-28 15:45:14.546177 (Thread-1): Writing runtime SQL for node "seed.subsurface.crop_types"
+2021-01-28 15:45:14.548509 (Thread-1): Using dremio connection "seed.subsurface.crop_types".
+2021-01-28 15:45:14.548769 (Thread-1): On seed.subsurface.crop_types: 
+    
+
+  create table
+    "$scratch"."dbt"."@fab4"."crop_types_blue"
+  as (
+    select
+    cast(crop_code as varchar)
+        as crop_code,cast(crop_label as varchar)
+        as crop_label
+  from
+    (values
+      
+        (
+            'AB'
+          ,
+            'Terrains à bâtir'
+          ),
+      
+        (
+            'AG'
+          ,
+            'Terrains d''agrément'
+          ),
+      
+        (
+            'B'
+          ,
+            'Bois'
+          ),
+      
+        (
+            'BF'
+          ,
+            'Futaies Feuillues'
+          ),
+      
+        (
+            'BM'
+          ,
+            'Futaies Mixtes'
+          ),
+      
+        (
+            'BO'
+          ,
+            'Oseraies'
+          ),
+      
+        (
+            'BP'
+          ,
+            'Peupleraies'
+          ),
+      
+        (
+            'BR'
+          ,
+            'Futaies résineuses'
+          ),
+      
+        (
+            'BS'
+          ,
+            'Taillis sous Futaies'
+          ),
+      
+        (
+            'BT'
+          ,
+            'Taillis simples'
+          ),
+      
+        (
+            'CA'
+          ,
+            'Carrières'
+          ),
+      
+        (
+            'CH'
+          ,
+            'Chemins de fer & Canaux de Navigation'
+          ),
+      
+        (
+            'E'
+          ,
+            'Eaux'
+          ),
+      
+        (
+            'J'
+          ,
+            'Jardins'
+          ),
+      
+        (
+            'L'
+          ,
+            'Landes'
+          ),
+      
+        (
+            'LB'
+          ,
+            'Landes Boisées'
+          ),
+      
+        (
+            'P'
+          ,
+            'Prés'
+          ),
+      
+        (
+            'PA'
+          ,
+            'Pâtures ou Pâturages'
+          ),
+      
+        (
+            'PC'
+          ,
+            'Pacages ou Pâtis'
+          ),
+      
+        (
+            'PE'
+          ,
+            'Prés d''embouche'
+          ),
+      
+        (
+            'PH'
+          ,
+            'Herbages'
+          ),
+      
+        (
+            'PP'
+          ,
+            'Prés Pâtures ou Herbages plantés'
+          ),
+      
+        (
+            'S'
+          ,
+            'Sols'
+          ),
+      
+        (
+            'T'
+          ,
+            'Terre'
+          ),
+      
+        (
+            'TP'
+          ,
+            'Terres plantées'
+          ),
+      
+        (
+            'VE'
+          ,
+            'Vergers'
+          ),
+      
+        (
+            'VI'
+          ,
+            'Vignes'
+          )
+      ) temp_table ( crop_code, crop_label )
+
+  )
+
+  
+2021-01-28 15:45:14.552914 (Thread-3): SQL status: OK in 0.08 seconds
+2021-01-28 15:45:14.557455 (Thread-3): Writing runtime SQL for node "seed.subsurface.premises_types"
+2021-01-28 15:45:14.558542 (Thread-3): Using dremio connection "seed.subsurface.premises_types".
+2021-01-28 15:45:14.558834 (Thread-3): On seed.subsurface.premises_types: 
+    
+
+  create table
+    "$scratch"."dbt"."@fab4"."premises_types_blue"
+  as (
+    select
+    cast(premises_code as varchar)
+        as premises_code,cast(premises_label_fr as varchar)
+        as premises_label_fr,cast(premises_label_en as varchar)
+        as premises_label_en
+  from
+    (values
+      
+        (
+            '1'
+          ,
+            'Maison'
+          ,
+            'House'
+          ),
+      
+        (
+            '2'
+          ,
+            'Appartement'
+          ,
+            'Flat'
+          ),
+      
+        (
+            '3'
+          ,
+            'Dépendance'
+          ,
+            'Outbuilding'
+          ),
+      
+        (
+            '4'
+          ,
+            'Local industriel. commercial ou assimilé'
+          ,
+            'Industrial premises. commercial or similar'
+          )
+      ) temp_table ( premises_code, premises_label_fr, premises_label_en )
+
+  )
+
+  
+2021-01-28 15:45:14.573979 (Thread-2): SQL status: OK in 0.12 seconds
+2021-01-28 15:45:14.577268 (Thread-2): Writing runtime SQL for node "seed.subsurface.transfer_types"
+2021-01-28 15:45:14.578086 (Thread-2): Using dremio connection "seed.subsurface.transfer_types".
+2021-01-28 15:45:14.578302 (Thread-2): On seed.subsurface.transfer_types: 
+    
+
+  create table
+    "$scratch"."dbt"."@fab4"."transfer_types_blue"
+  as (
+    select
+    cast(transfer_label_fr as varchar)
+        as transfer_label_fr,cast(transfer_label_en as varchar)
+        as transfer_label_en
+  from
+    (values
+      
+        (
+            'Expropriation'
+          ,
+            'Expropriation'
+          ),
+      
+        (
+            'Vente'
+          ,
+            'Sale'
+          ),
+      
+        (
+            'Echange'
+          ,
+            'Exchange'
+          ),
+      
+        (
+            'Adjudication'
+          ,
+            'Sale by tender'
+          ),
+      
+        (
+            'Vente en l''état futur d''achèvement'
+          ,
+            'Sale before completion'
+          ),
+      
+        (
+            'Vente terrain à bâtir'
+          ,
+            'Building plot sale'
+          )
+      ) temp_table ( transfer_label_fr, transfer_label_en )
+
+  )
+
+  
+2021-01-28 15:45:15.036370 (Thread-1): SQL status: OK in 0.49 seconds
+2021-01-28 15:45:15.046294 (Thread-1): Using dremio connection "seed.subsurface.crop_types".
+2021-01-28 15:45:15.046600 (Thread-1): On seed.subsurface.crop_types: 
+    
+  create or replace view "@fab4"."crop_types" as (
+    select * from "$scratch"."dbt"."@fab4"."crop_types_blue"
+  )
+
+  
+2021-01-28 15:45:15.050582 (Thread-2): SQL status: OK in 0.47 seconds
+2021-01-28 15:45:15.053357 (Thread-2): Using dremio connection "seed.subsurface.transfer_types".
+2021-01-28 15:45:15.053606 (Thread-2): On seed.subsurface.transfer_types: 
+    
+  create or replace view "@fab4"."transfer_types" as (
+    select * from "$scratch"."dbt"."@fab4"."transfer_types_blue"
+  )
+
+  
+2021-01-28 15:45:15.251627 (Thread-3): SQL status: OK in 0.69 seconds
+2021-01-28 15:45:15.257642 (Thread-3): Using dremio connection "seed.subsurface.premises_types".
+2021-01-28 15:45:15.258035 (Thread-3): On seed.subsurface.premises_types: 
+    
+  create or replace view "@fab4"."premises_types" as (
+    select * from "$scratch"."dbt"."@fab4"."premises_types_blue"
+  )
+
+  
+2021-01-28 15:45:15.399948 (Thread-2): SQL status: OK in 0.35 seconds
+2021-01-28 15:45:15.407901 (Thread-2): Using dremio connection "seed.subsurface.transfer_types".
+2021-01-28 15:45:15.408247 (Thread-2): On seed.subsurface.transfer_types: drop table if exists "$scratch"."dbt"."@fab4"."transfer_types_green"
+2021-01-28 15:45:15.412079 (Thread-1): SQL status: OK in 0.37 seconds
+2021-01-28 15:45:15.420110 (Thread-1): Using dremio connection "seed.subsurface.crop_types".
+2021-01-28 15:45:15.420457 (Thread-1): On seed.subsurface.crop_types: drop table if exists "$scratch"."dbt"."@fab4"."crop_types_green"
+2021-01-28 15:45:15.475133 (Thread-3): SQL status: OK in 0.22 seconds
+2021-01-28 15:45:15.482616 (Thread-3): Using dremio connection "seed.subsurface.premises_types".
+2021-01-28 15:45:15.482934 (Thread-3): On seed.subsurface.premises_types: drop table if exists "$scratch"."dbt"."@fab4"."premises_types_green"
+2021-01-28 15:45:15.483632 (Thread-2): SQL status: OK in 0.08 seconds
+2021-01-28 15:45:15.506005 (Thread-2): finished collecting timing info
+2021-01-28 15:45:15.506824 (Thread-2): On seed.subsurface.transfer_types: ROLLBACK
+2021-01-28 15:45:15.507082 (Thread-2): On seed.subsurface.transfer_types: Close
+2021-01-28 15:45:15.507834 (Thread-1): SQL status: OK in 0.09 seconds
+2021-01-28 15:45:15.519543 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6996cc96-2941-4c47-a253-05a13e351183', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56fc40c240>]}
+2021-01-28 15:45:15.520202 (Thread-2): 16:45:15 | 3 of 3 OK loaded seed file no_schema.transfer_types.................. [OK in 3.30s]
+2021-01-28 15:45:15.520606 (Thread-2): Finished running node seed.subsurface.transfer_types
+2021-01-28 15:45:15.516107 (Thread-1): finished collecting timing info
+2021-01-28 15:45:15.521404 (Thread-1): On seed.subsurface.crop_types: ROLLBACK
+2021-01-28 15:45:15.521752 (Thread-1): On seed.subsurface.crop_types: Close
+2021-01-28 15:45:15.524488 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6996cc96-2941-4c47-a253-05a13e351183', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56fc467668>]}
+2021-01-28 15:45:15.524978 (Thread-1): 16:45:15 | 1 of 3 OK loaded seed file no_schema.crop_types...................... [OK in 3.38s]
+2021-01-28 15:45:15.525276 (Thread-1): Finished running node seed.subsurface.crop_types
+2021-01-28 15:45:15.536786 (Thread-3): SQL status: OK in 0.05 seconds
+2021-01-28 15:45:15.545140 (Thread-3): finished collecting timing info
+2021-01-28 15:45:15.545943 (Thread-3): On seed.subsurface.premises_types: ROLLBACK
+2021-01-28 15:45:15.546184 (Thread-3): On seed.subsurface.premises_types: Close
+2021-01-28 15:45:15.549909 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6996cc96-2941-4c47-a253-05a13e351183', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56fc4ab9e8>]}
+2021-01-28 15:45:15.550722 (Thread-3): 16:45:15 | 2 of 3 OK loaded seed file no_schema.premises_types.................. [OK in 3.36s]
+2021-01-28 15:45:15.551187 (Thread-3): Finished running node seed.subsurface.premises_types
+2021-01-28 15:45:15.624982 (MainThread): Acquiring new dremio connection "master".
+2021-01-28 15:45:15.625500 (MainThread): On master: ROLLBACK
+2021-01-28 15:45:15.625720 (MainThread): Opening a new connection, currently in state init
+2021-01-28 15:45:15.625918 (MainThread): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:15.923805 (MainThread): Connected to db: None
+2021-01-28 15:45:15.924652 (MainThread): On master: ROLLBACK
+2021-01-28 15:45:15.925012 (MainThread): On master: Close
+2021-01-28 15:45:15.927695 (MainThread): 16:45:15 | 
+2021-01-28 15:45:15.928220 (MainThread): 16:45:15 | Finished running 3 seeds in 6.25s.
+2021-01-28 15:45:15.928725 (MainThread): Connection 'master' was properly closed.
+2021-01-28 15:45:15.929126 (MainThread): Connection 'seed.subsurface.crop_types' was properly closed.
+2021-01-28 15:45:15.929474 (MainThread): Connection 'seed.subsurface.premises_types' was properly closed.
+2021-01-28 15:45:15.929840 (MainThread): Connection 'seed.subsurface.transfer_types' was properly closed.
+2021-01-28 15:45:15.976145 (MainThread): 
+2021-01-28 15:45:15.976942 (MainThread): Completed successfully
+2021-01-28 15:45:15.977534 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2021-01-28 15:45:15.978329 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56fc4d7908>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56fc467e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56fc40c6a0>]}
+2021-01-28 15:45:15.979127 (MainThread): Flushing usage events
+2021-01-28 15:45:25.421802 (MainThread): Running with dbt=0.18.1
+2021-01-28 15:45:25.535955 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/root/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target='unmanaged', test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-01-28 15:45:25.537523 (MainThread): Tracking: tracking
+2021-01-28 15:45:25.553037 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcdf4a400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcdf4a0b8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcdf4a048>]}
+2021-01-28 15:45:25.602719 (MainThread): Partial parsing not enabled
+2021-01-28 15:45:25.604311 (MainThread): Parsing macros/get_custom_database.sql
+2021-01-28 15:45:25.609796 (MainThread): Parsing macros/get_custom_schema.sql
+2021-01-28 15:45:25.611819 (MainThread): Parsing macros/non_regression_test.sql
+2021-01-28 15:45:25.640264 (MainThread): Parsing macros/catalog.sql
+2021-01-28 15:45:25.644572 (MainThread): Parsing macros/adapters.sql
+2021-01-28 15:45:25.683980 (MainThread): Parsing macros/helpers.sql
+2021-01-28 15:45:25.713494 (MainThread): Parsing macros/get_custom_database.sql
+2021-01-28 15:45:25.717031 (MainThread): Parsing macros/get_custom_schema.sql
+2021-01-28 15:45:25.719004 (MainThread): Parsing macros/drop_orphaned_tables.sql
+2021-01-28 15:45:25.723967 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-01-28 15:45:25.748224 (MainThread): Parsing macros/materializations/view/view.sql
+2021-01-28 15:45:25.756237 (MainThread): Parsing macros/materializations/table/table.sql
+2021-01-28 15:45:25.766796 (MainThread): Parsing macros/materializations/file/file.sql
+2021-01-28 15:45:25.778901 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-01-28 15:45:25.803000 (MainThread): Parsing macros/materializations/raw_reflection/raw_reflection.sql
+2021-01-28 15:45:25.816243 (MainThread): Parsing macros/materializations/aggregation_reflection/aggregation_reflection.sql
+2021-01-28 15:45:25.832699 (MainThread): Parsing macros/operations/drop_orphan_tables.sql
+2021-01-28 15:45:25.834599 (MainThread): Parsing macros/core.sql
+2021-01-28 15:45:25.841196 (MainThread): Parsing macros/adapters/common.sql
+2021-01-28 15:45:25.913379 (MainThread): Parsing macros/etc/datetime.sql
+2021-01-28 15:45:25.928639 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-01-28 15:45:25.930357 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-01-28 15:45:25.933454 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-01-28 15:45:25.937111 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-01-28 15:45:25.940132 (MainThread): Parsing macros/etc/query.sql
+2021-01-28 15:45:25.942132 (MainThread): Parsing macros/materializations/helpers.sql
+2021-01-28 15:45:26.006687 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-01-28 15:45:26.029987 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-01-28 15:45:26.033316 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-01-28 15:45:26.044393 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-01-28 15:45:26.079793 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-28 15:45:26.124150 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-28 15:45:26.127315 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-28 15:45:26.157036 (MainThread): Parsing macros/materializations/table/table.sql
+2021-01-28 15:45:26.168613 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-28 15:45:26.177496 (MainThread): Parsing macros/materializations/view/view.sql
+2021-01-28 15:45:26.188210 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-01-28 15:45:26.193111 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-01-28 15:45:26.195952 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-01-28 15:45:26.199358 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-01-28 15:45:26.212481 (MainThread): Partial parsing not enabled
+2021-01-28 15:45:26.292155 (MainThread): Acquiring new dremio connection "model.subsurface.d_crop_types".
+2021-01-28 15:45:26.334705 (MainThread): Acquiring new dremio connection "model.subsurface.d_municipalities".
+2021-01-28 15:45:26.355874 (MainThread): Acquiring new dremio connection "model.subsurface.d_premises_types".
+2021-01-28 15:45:26.376783 (MainThread): Acquiring new dremio connection "model.subsurface.f_land_values".
+2021-01-28 15:45:26.400408 (MainThread): Acquiring new dremio connection "model.subsurface.stg__land_values".
+2021-01-28 15:45:26.421903 (MainThread): Acquiring new dremio connection "model.subsurface.stg__municipalities".
+2021-01-28 15:45:26.450657 (MainThread): Acquiring new dremio connection "analysis.subsurface.most_expensive_departments_for_flats".
+2021-01-28 15:45:26.474279 (MainThread): Acquiring new dremio connection "analysis.subsurface.transactions_seasonality".
+2021-01-28 15:45:26.507307 (MainThread): Acquiring new dremio connection "test.subsurface.stg__land_values_built_surface_implies_premises_code".
+2021-01-28 15:45:26.528636 (MainThread): Acquiring new dremio connection "test.subsurface.stg__land_values_land_surface_implies_crop_code".
+2021-01-28 15:45:28.203635 (MainThread): WARNING: Found documentation for resource "most_expansive_departments_for_flats" which was not found or is disabled
+2021-01-28 15:45:28.767831 (MainThread): Found 6 models, 48 tests, 0 snapshots, 2 analyses, 167 macros, 0 operations, 3 seed files, 2 sources
+2021-01-28 15:45:28.772575 (MainThread): 
+2021-01-28 15:45:28.773177 (MainThread): Acquiring new dremio connection "master".
+2021-01-28 15:45:28.788948 (ThreadPoolExecutor-0_0): Acquiring new dremio connection "list_@fab4".
+2021-01-28 15:45:28.841685 (ThreadPoolExecutor-0_0): Using dremio connection "list_@fab4".
+2021-01-28 15:45:28.841879 (ThreadPoolExecutor-0_0): On list_@fab4: 
+    
+    with schemata as (
+        select lower(case when position('.' in schema_name) > 0
+                then substring(schema_name, 1, position('.' in schema_name) - 1)
+                else schema_name
+            end) as catalog_name
+            ,lower(case when position('.' in schema_name) > 0
+                then substring(schema_name, position('.' in schema_name) + 1)
+                else 'no_schema'
+            end) as schema_name
+        from information_schema.schemata
+    )
+    select distinct schema_name
+    from schemata
+    where ilike(catalog_name, '@fab4')
+      -- and schema_name <> 'no_schema'
+  
+  
+2021-01-28 15:45:28.842031 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-01-28 15:45:28.842170 (ThreadPoolExecutor-0_0): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:29.114632 (ThreadPoolExecutor-0_0): Connected to db: None
+2021-01-28 15:45:29.385670 (ThreadPoolExecutor-0_0): SQL status: OK in 0.54 seconds
+2021-01-28 15:45:29.419733 (ThreadPoolExecutor-0_0): On list_@fab4: Close
+2021-01-28 15:45:29.686593 (ThreadPoolExecutor-1_0): Acquiring new dremio connection "list_@fab4_no_schema".
+2021-01-28 15:45:29.710207 (ThreadPoolExecutor-1_0): Using dremio connection "list_@fab4_no_schema".
+2021-01-28 15:45:29.710626 (ThreadPoolExecutor-1_0): On list_@fab4_no_schema: with t1(table_catalog, table_name, table_schema, table_type) as (
+    select lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, 1, position('.' in table_schema) - 1)
+            else table_schema
+        end)
+        ,lower(table_name)
+        ,lower(case when position('.' in table_schema) > 0
+            then substring(table_schema, position('.' in table_schema) + 1)
+            else 'no_schema'
+        end)
+        ,lower(table_type)
+    from information_schema."tables"
+    )
+    ,r1(identifier_position, database_end_position, dataset, name, type) as (
+        select
+            case when "RIGHT"(dataset, 1) = '"'
+                then length(dataset) - strpos(substr(reverse(dataset), 2), '"')
+                else length(dataset) - strpos(reverse(dataset), '.') + 2
+            end
+            ,case when "LEFT"(dataset, 1) = '"'
+                then strpos(substr(dataset, 2), '"') + 1
+                else strpos(dataset, '.') - 1
+            end
+            ,dataset
+            ,name
+            ,type
+        from sys.reflections
+    )
+    ,r2(table_catalog, table_name, table_schema, table_type) as (
+    select
+        lower(replace(substr(dataset, 1, database_end_position), '"', ''))
+        ,lower(name)
+        ,case when identifier_position - database_end_position > 2
+            then lower(replace(substr(dataset, database_end_position + 2, identifier_position - database_end_position - 3), '"', ''))
+            else 'no_schema'
+        end
+        -- ,lower(type) || 'reflection'
+        ,'materializedview'
+--        ,replace(substr(dataset, identifier_position), '"', '') as identifier
+    from r1
+    )
+    ,u(table_catalog, table_name, table_schema, table_type) as (
+      select *
+      from t1
+      union all
+      select *
+      from r2
+    )
+
+    select *
+    from u
+    where ilike(table_catalog, '@fab4')
+      and ilike(table_schema, 'no_schema')
+      and table_type <> 'system_table'
+  
+2021-01-28 15:45:29.710971 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-01-28 15:45:29.711245 (ThreadPoolExecutor-1_0): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:29.888024 (ThreadPoolExecutor-1_0): Connected to db: None
+2021-01-28 15:45:30.284404 (ThreadPoolExecutor-1_0): SQL status: OK in 0.57 seconds
+2021-01-28 15:45:30.324109 (ThreadPoolExecutor-1_0): On list_@fab4_no_schema: ROLLBACK
+2021-01-28 15:45:30.324537 (ThreadPoolExecutor-1_0): On list_@fab4_no_schema: Close
+2021-01-28 15:45:30.326989 (MainThread): 16:45:30 | Concurrency: 4 threads (target='unmanaged')
+2021-01-28 15:45:30.327336 (MainThread): 16:45:30 | 
+2021-01-28 15:45:30.331638 (Thread-1): Began running node model.subsurface.stg__land_values
+2021-01-28 15:45:30.332048 (Thread-4): Began running node model.subsurface.stg__municipalities
+2021-01-28 15:45:30.334873 (Thread-1): 16:45:30 | 1 of 6 START view model @fab4.stg__land_values....................... [RUN]
+2021-01-28 15:45:30.335171 (Thread-3): Began running node model.subsurface.d_crop_types
+2021-01-28 15:45:30.340473 (Thread-3): 16:45:30 | 3 of 6 START view model @fab4.d_crop_types........................... [RUN]
+2021-01-28 15:45:30.335489 (Thread-2): Began running node model.subsurface.d_premises_types
+2021-01-28 15:45:30.338340 (Thread-1): Acquiring new dremio connection "model.subsurface.stg__land_values".
+2021-01-28 15:45:30.337651 (Thread-4): 16:45:30 | 2 of 6 START view model @fab4.stg__municipalities.................... [RUN]
+2021-01-28 15:45:30.341167 (Thread-3): Acquiring new dremio connection "model.subsurface.d_crop_types".
+2021-01-28 15:45:30.345672 (Thread-2): 16:45:30 | 4 of 6 START view model @fab4.d_premises_types....................... [RUN]
+2021-01-28 15:45:30.346122 (Thread-1): Compiling model.subsurface.stg__land_values
+2021-01-28 15:45:30.346747 (Thread-3): Compiling model.subsurface.d_crop_types
+2021-01-28 15:45:30.347908 (Thread-4): Acquiring new dremio connection "model.subsurface.stg__municipalities".
+2021-01-28 15:45:30.359571 (Thread-2): Acquiring new dremio connection "model.subsurface.d_premises_types".
+2021-01-28 15:45:30.400984 (Thread-4): Compiling model.subsurface.stg__municipalities
+2021-01-28 15:45:30.416630 (Thread-2): Compiling model.subsurface.d_premises_types
+2021-01-28 15:45:30.438961 (Thread-1): Writing injected SQL for node "model.subsurface.stg__land_values"
+2021-01-28 15:45:30.495777 (Thread-1): finished collecting timing info
+2021-01-28 15:45:30.497535 (Thread-3): Writing injected SQL for node "model.subsurface.d_crop_types"
+2021-01-28 15:45:30.526488 (Thread-4): Writing injected SQL for node "model.subsurface.stg__municipalities"
+2021-01-28 15:45:30.571574 (Thread-2): Writing injected SQL for node "model.subsurface.d_premises_types"
+2021-01-28 15:45:30.591666 (Thread-4): finished collecting timing info
+2021-01-28 15:45:30.604189 (Thread-2): finished collecting timing info
+2021-01-28 15:45:30.634858 (Thread-3): finished collecting timing info
+2021-01-28 15:45:30.694301 (Thread-3): Writing runtime SQL for node "model.subsurface.d_crop_types"
+2021-01-28 15:45:30.702293 (Thread-1): Writing runtime SQL for node "model.subsurface.stg__land_values"
+2021-01-28 15:45:30.709658 (Thread-2): Writing runtime SQL for node "model.subsurface.d_premises_types"
+2021-01-28 15:45:30.721967 (Thread-4): Writing runtime SQL for node "model.subsurface.stg__municipalities"
+2021-01-28 15:45:30.723267 (Thread-3): Using dremio connection "model.subsurface.d_crop_types".
+2021-01-28 15:45:30.723947 (Thread-1): Using dremio connection "model.subsurface.stg__land_values".
+2021-01-28 15:45:30.725149 (Thread-4): Using dremio connection "model.subsurface.stg__municipalities".
+2021-01-28 15:45:30.725601 (Thread-3): On model.subsurface.d_crop_types: 
+  create or replace view "@fab4"."d_crop_types" as (
+    select
+  crop_code
+  ,crop_label
+from
+  "@fab4"."crop_types"
+
+union all
+
+select
+  'N/A'
+  ,'N/A'
+  )
+
+2021-01-28 15:45:30.726244 (Thread-2): Using dremio connection "model.subsurface.d_premises_types".
+2021-01-28 15:45:30.726710 (Thread-1): On model.subsurface.stg__land_values: 
+  create or replace view "@fab4"."stg__land_values" as (
+    select
+  cast(regexp_replace(nullif("Date mutation", ''), '([0-9]{2})/([0-9]{2})/([0-9]{4})', '$3-$2-$1') as date) as transaction_date
+  ,cast(replace(nullif("Valeur fonciere", ''), ',', '.') as decimal) as transaction_amount
+  ,nullif("Nature mutation", '') as transfer_label_fr
+  ,nullif("type de voie", '') as lane_type
+  ,lpad(nullif("Code voie", ''), 4, '0') as lane_code
+  ,nullif("Voie", '') as lane
+  ,lpad(nullif("Code postal", ''), 5, '0') as zip_code
+  ,case when "Code departement" not like '97%'
+    then lpad(nullif("Code departement", ''), 2, '0') || lpad(nullif("Code commune", ''), 3, '0')
+    else lpad(nullif("Code departement", ''), 3, '0') || lpad(nullif("Code commune", ''), 2, '0')
+  end as municipality_code
+  ,cast(nullif("Nombre de lots", '') as decimal) as lots_count
+  ,nullif("code type local", '') as premises_code
+  ,cast(nullif("Surface reelle bati", '') as decimal) as built_surface
+  ,cast(nullif("Surface terrain", '') as decimal) as land_surface
+  ,cast(nullif("Nombre pieces principales", '') as decimal) as main_rooms_count
+  ,nullif("Nature culture", '') as crop_code
+from
+  "fs"."valeurs_foncieres"
+  )
+
+2021-01-28 15:45:30.727204 (Thread-4): On model.subsurface.stg__municipalities: 
+  create or replace view "@fab4"."stg__municipalities" as (
+    select
+    com_code as municipality_code
+    ,com_nom as municipality_label
+    ,dep_code as department_code
+    ,dep_nom_num as department_label
+    ,reg_code as region_code
+    ,reg_nom as region_label
+from
+  "fs"."geo"."communes.csv"
+  )
+
+2021-01-28 15:45:30.727714 (Thread-3): Opening a new connection, currently in state init
+2021-01-28 15:45:30.728161 (Thread-2): On model.subsurface.d_premises_types: 
+  create or replace view "@fab4"."d_premises_types" as (
+    select
+  premises_code
+  ,premises_label_en as premises_label
+from
+  "@fab4"."premises_types"
+
+union all
+
+select
+  'N/A'
+  ,'N/A'
+  )
+
+2021-01-28 15:45:30.728656 (Thread-1): Opening a new connection, currently in state closed
+2021-01-28 15:45:30.729178 (Thread-4): Opening a new connection, currently in state init
+2021-01-28 15:45:30.729664 (Thread-3): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:30.730105 (Thread-2): Opening a new connection, currently in state init
+2021-01-28 15:45:30.730566 (Thread-1): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:30.731033 (Thread-4): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:30.731840 (Thread-2): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:31.488352 (Thread-2): Connected to db: None
+2021-01-28 15:45:31.536825 (Thread-4): Connected to db: None
+2021-01-28 15:45:31.537972 (Thread-3): Connected to db: None
+2021-01-28 15:45:31.561813 (Thread-1): Connected to db: None
+2021-01-28 15:45:31.723136 (Thread-2): SQL status: OK in 0.99 seconds
+2021-01-28 15:45:31.733417 (Thread-2): finished collecting timing info
+2021-01-28 15:45:31.734173 (Thread-2): On model.subsurface.d_premises_types: ROLLBACK
+2021-01-28 15:45:31.734411 (Thread-2): On model.subsurface.d_premises_types: Close
+2021-01-28 15:45:31.736205 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b76be5b-06f6-4439-8b07-c763a993aa9a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcddc0048>]}
+2021-01-28 15:45:31.738720 (Thread-2): 16:45:31 | 4 of 6 OK created view model @fab4.d_premises_types.................. [OK in 1.38s]
+2021-01-28 15:45:31.739054 (Thread-2): Finished running node model.subsurface.d_premises_types
+2021-01-28 15:45:31.740390 (Thread-3): SQL status: OK in 1.01 seconds
+2021-01-28 15:45:31.751140 (Thread-3): finished collecting timing info
+2021-01-28 15:45:31.752213 (Thread-3): On model.subsurface.d_crop_types: ROLLBACK
+2021-01-28 15:45:31.752600 (Thread-3): On model.subsurface.d_crop_types: Close
+2021-01-28 15:45:31.756754 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b76be5b-06f6-4439-8b07-c763a993aa9a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcdd1d5c0>]}
+2021-01-28 15:45:31.761006 (Thread-3): 16:45:31 | 3 of 6 OK created view model @fab4.d_crop_types...................... [OK in 1.41s]
+2021-01-28 15:45:31.761680 (Thread-3): Finished running node model.subsurface.d_crop_types
+2021-01-28 15:45:31.774262 (Thread-1): Error running SQL: 
+  create or replace view "@fab4"."stg__land_values" as (
+    select
+  cast(regexp_replace(nullif("Date mutation", ''), '([0-9]{2})/([0-9]{2})/([0-9]{4})', '$3-$2-$1') as date) as transaction_date
+  ,cast(replace(nullif("Valeur fonciere", ''), ',', '.') as decimal) as transaction_amount
+  ,nullif("Nature mutation", '') as transfer_label_fr
+  ,nullif("type de voie", '') as lane_type
+  ,lpad(nullif("Code voie", ''), 4, '0') as lane_code
+  ,nullif("Voie", '') as lane
+  ,lpad(nullif("Code postal", ''), 5, '0') as zip_code
+  ,case when "Code departement" not like '97%'
+    then lpad(nullif("Code departement", ''), 2, '0') || lpad(nullif("Code commune", ''), 3, '0')
+    else lpad(nullif("Code departement", ''), 3, '0') || lpad(nullif("Code commune", ''), 2, '0')
+  end as municipality_code
+  ,cast(nullif("Nombre de lots", '') as decimal) as lots_count
+  ,nullif("code type local", '') as premises_code
+  ,cast(nullif("Surface reelle bati", '') as decimal) as built_surface
+  ,cast(nullif("Surface terrain", '') as decimal) as land_surface
+  ,cast(nullif("Nombre pieces principales", '') as decimal) as main_rooms_count
+  ,nullif("Nature culture", '') as crop_code
+from
+  "fs"."valeurs_foncieres"
+  )
+
+2021-01-28 15:45:31.774800 (Thread-1): Rolling back transaction.
+2021-01-28 15:45:31.775197 (Thread-1): On model.subsurface.stg__land_values: ROLLBACK
+2021-01-28 15:45:31.775574 (Thread-1): On model.subsurface.stg__land_values: Close
+2021-01-28 15:45:31.777279 (Thread-1): finished collecting timing info
+2021-01-28 15:45:31.781167 (Thread-4): Error running SQL: 
+  create or replace view "@fab4"."stg__municipalities" as (
+    select
+    com_code as municipality_code
+    ,com_nom as municipality_label
+    ,dep_code as department_code
+    ,dep_nom_num as department_label
+    ,reg_code as region_code
+    ,reg_nom as region_label
+from
+  "fs"."geo"."communes.csv"
+  )
+
+2021-01-28 15:45:31.781425 (Thread-4): Rolling back transaction.
+2021-01-28 15:45:31.781684 (Thread-4): On model.subsurface.stg__municipalities: ROLLBACK
+2021-01-28 15:45:31.781884 (Thread-4): On model.subsurface.stg__municipalities: Close
+2021-01-28 15:45:31.785506 (Thread-4): finished collecting timing info
+2021-01-28 15:45:31.786693 (Thread-4): Runtime Error in model stg__municipalities (models/staging/stg__municipalities.sql)
+  ('HY000', '[HY000] [Dremio][Connector] (1040) Dremio failed to execute the query: \n  create or replace view "@fab4"."stg__municipalities" as (\n    select\n    com_code as municipality_code\n    ,com_nom as municipality_label\n    ,dep_code as department_code\n    ,dep_nom_num as department_label\n    ,reg_code as region_code\n    ,reg_nom as region_label\nfrom\n   "fs"."geo"."communes.csv"\n  )\n\n[30038]Query execution error. Details:[ \nSYSTEM ERROR: SqlValida...[see log] (1040) (SQLExecDirectW)')
+Traceback (most recent call last):
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 58, in exception_handler
+    yield
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 165, in add_query
+    cursor.execute(sql)
+pyodbc.Error: ('HY000', '[HY000] [Dremio][Connector] (1040) Dremio failed to execute the query: \n  create or replace view "@fab4"."stg__municipalities" as (\n    select\n    com_code as municipality_code\n    ,com_nom as municipality_label\n    ,dep_code as department_code\n    ,dep_nom_num as department_label\n    ,reg_code as region_code\n    ,reg_nom as region_label\nfrom\n   "fs"."geo"."communes.csv"\n  )\n\n[30038]Query execution error. Details:[ \nSYSTEM ERROR: SqlValida...[see log] (1040) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/site-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 18, in macro
+  File "/usr/local/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 64, in macro
+  File "/usr/local/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 187, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 172, in add_query
+    return connection, cursor
+  File "/usr/lib64/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 82, in exception_handler
+    raise dbt.exceptions.RuntimeException(e)
+dbt.exceptions.RuntimeException: Runtime Error in model stg__municipalities (models/staging/stg__municipalities.sql)
+  ('HY000', '[HY000] [Dremio][Connector] (1040) Dremio failed to execute the query: \n  create or replace view "@fab4"."stg__municipalities" as (\n    select\n    com_code as municipality_code\n    ,com_nom as municipality_label\n    ,dep_code as department_code\n    ,dep_nom_num as department_label\n    ,reg_code as region_code\n    ,reg_nom as region_label\nfrom\n   "fs"."geo"."communes.csv"\n  )\n\n[30038]Query execution error. Details:[ \nSYSTEM ERROR: SqlValida...[see log] (1040) (SQLExecDirectW)')
+2021-01-28 15:45:31.789936 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b76be5b-06f6-4439-8b07-c763a993aa9a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcdcfb978>]}
+2021-01-28 15:45:31.792613 (Thread-4): 16:45:31 | 2 of 6 ERROR creating view model @fab4.stg__municipalities........... [ERROR in 1.44s]
+2021-01-28 15:45:31.792934 (Thread-4): Finished running node model.subsurface.stg__municipalities
+2021-01-28 15:45:31.779194 (Thread-1): Runtime Error in model stg__land_values (models/staging/stg__land_values.sql)
+  ('HY000', '[HY000] [Dremio][Connector] (1040) Dremio failed to execute the query: \n  create or replace view "@fab4"."stg__land_values" as (\n    select\n  cast(regexp_replace(nullif("Date mutation", \'\'), \'([0-9]{2})/([0-9]{2})/([0-9]{4})\', \'$3-$2-$1\') as date) as transaction_date\n  ,cast(replace(nullif("Valeur fonciere", \'\'), \',\', \'.\') as decimal) as transaction_amount\n  ,nullif("Nature mutation", \'\') as transfer_label_fr\n  ,nullif("type de voie", \'\') ...[see log] (1040) (SQLExecDirectW)')
+Traceback (most recent call last):
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 58, in exception_handler
+    yield
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 165, in add_query
+    cursor.execute(sql)
+pyodbc.Error: ('HY000', '[HY000] [Dremio][Connector] (1040) Dremio failed to execute the query: \n  create or replace view "@fab4"."stg__land_values" as (\n    select\n  cast(regexp_replace(nullif("Date mutation", \'\'), \'([0-9]{2})/([0-9]{2})/([0-9]{4})\', \'$3-$2-$1\') as date) as transaction_date\n  ,cast(replace(nullif("Valeur fonciere", \'\'), \',\', \'.\') as decimal) as transaction_amount\n  ,nullif("Nature mutation", \'\') as transfer_label_fr\n  ,nullif("type de voie", \'\') ...[see log] (1040) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/dbt/task/base.py", line 333, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.6/site-packages/dbt/task/base.py", line 276, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.6/site-packages/dbt/task/base.py", line 378, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.6/site-packages/dbt/task/run.py", line 233, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 18, in macro
+  File "/usr/local/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 64, in macro
+  File "/usr/local/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/lib/python3.6/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    fetch=fetch
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 187, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 172, in add_query
+    return connection, cursor
+  File "/usr/lib64/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/root/dev/git/dbt-dremio/dbt/adapters/dremio/connections.py", line 82, in exception_handler
+    raise dbt.exceptions.RuntimeException(e)
+dbt.exceptions.RuntimeException: Runtime Error in model stg__land_values (models/staging/stg__land_values.sql)
+  ('HY000', '[HY000] [Dremio][Connector] (1040) Dremio failed to execute the query: \n  create or replace view "@fab4"."stg__land_values" as (\n    select\n  cast(regexp_replace(nullif("Date mutation", \'\'), \'([0-9]{2})/([0-9]{2})/([0-9]{4})\', \'$3-$2-$1\') as date) as transaction_date\n  ,cast(replace(nullif("Valeur fonciere", \'\'), \',\', \'.\') as decimal) as transaction_amount\n  ,nullif("Nature mutation", \'\') as transfer_label_fr\n  ,nullif("type de voie", \'\') ...[see log] (1040) (SQLExecDirectW)')
+2021-01-28 15:45:31.795095 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3b76be5b-06f6-4439-8b07-c763a993aa9a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcdcf2048>]}
+2021-01-28 15:45:31.799544 (Thread-1): 16:45:31 | 1 of 6 ERROR creating view model @fab4.stg__land_values.............. [ERROR in 1.46s]
+2021-01-28 15:45:31.800282 (Thread-1): Finished running node model.subsurface.stg__land_values
+2021-01-28 15:45:31.803899 (Thread-2): Began running node model.subsurface.d_municipalities
+2021-01-28 15:45:31.804384 (Thread-2): 16:45:31 | 5 of 6 SKIP relation no_schema.d_municipalities...................... [SKIP]
+2021-01-28 15:45:31.804726 (Thread-2): Finished running node model.subsurface.d_municipalities
+2021-01-28 15:45:31.805027 (Thread-2): Began running node model.subsurface.f_land_values
+2021-01-28 15:45:31.805280 (Thread-2): 16:45:31 | 6 of 6 SKIP relation no_schema.f_land_values......................... [SKIP]
+2021-01-28 15:45:31.805560 (Thread-2): Finished running node model.subsurface.f_land_values
+2021-01-28 15:45:31.868307 (MainThread): Acquiring new dremio connection "master".
+2021-01-28 15:45:31.868961 (MainThread): On master: ROLLBACK
+2021-01-28 15:45:31.869268 (MainThread): Opening a new connection, currently in state init
+2021-01-28 15:45:31.869620 (MainThread): Using connection string: ConnectionType=Direct;AuthenticationType=Plain;Driver={Dremio ODBC Driver 64-bit};HOST=localhost;PORT=31010;UID=fab4;PWD=fab4fab4
+2021-01-28 15:45:32.100490 (MainThread): Connected to db: None
+2021-01-28 15:45:32.101063 (MainThread): On master: ROLLBACK
+2021-01-28 15:45:32.101269 (MainThread): On master: Close
+2021-01-28 15:45:32.103292 (MainThread): 16:45:32 | 
+2021-01-28 15:45:32.103722 (MainThread): 16:45:32 | Finished running 6 view models in 3.33s.
+2021-01-28 15:45:32.103994 (MainThread): Connection 'master' was properly closed.
+2021-01-28 15:45:32.104183 (MainThread): Connection 'model.subsurface.stg__land_values' was properly closed.
+2021-01-28 15:45:32.104363 (MainThread): Connection 'model.subsurface.d_crop_types' was properly closed.
+2021-01-28 15:45:32.104638 (MainThread): Connection 'model.subsurface.stg__municipalities' was properly closed.
+2021-01-28 15:45:32.104821 (MainThread): Connection 'model.subsurface.d_premises_types' was properly closed.
+2021-01-28 15:45:32.154342 (MainThread): 
+2021-01-28 15:45:32.154858 (MainThread): Completed with 2 errors and 0 warnings:
+2021-01-28 15:45:32.155202 (MainThread): 
+2021-01-28 15:45:32.155531 (MainThread): Runtime Error in model stg__municipalities (models/staging/stg__municipalities.sql)
+2021-01-28 15:45:32.155802 (MainThread):   ('HY000', '[HY000] [Dremio][Connector] (1040) Dremio failed to execute the query: \n  create or replace view "@fab4"."stg__municipalities" as (\n    select\n    com_code as municipality_code\n    ,com_nom as municipality_label\n    ,dep_code as department_code\n    ,dep_nom_num as department_label\n    ,reg_code as region_code\n    ,reg_nom as region_label\nfrom\n   "fs"."geo"."communes.csv"\n  )\n\n[30038]Query execution error. Details:[ \nSYSTEM ERROR: SqlValida...[see log] (1040) (SQLExecDirectW)')
+2021-01-28 15:45:32.156080 (MainThread): 
+2021-01-28 15:45:32.156349 (MainThread): Runtime Error in model stg__land_values (models/staging/stg__land_values.sql)
+2021-01-28 15:45:32.156652 (MainThread):   ('HY000', '[HY000] [Dremio][Connector] (1040) Dremio failed to execute the query: \n  create or replace view "@fab4"."stg__land_values" as (\n    select\n  cast(regexp_replace(nullif("Date mutation", \'\'), \'([0-9]{2})/([0-9]{2})/([0-9]{4})\', \'$3-$2-$1\') as date) as transaction_date\n  ,cast(replace(nullif("Valeur fonciere", \'\'), \',\', \'.\') as decimal) as transaction_amount\n  ,nullif("Nature mutation", \'\') as transfer_label_fr\n  ,nullif("type de voie", \'\') ...[see log] (1040) (SQLExecDirectW)')
+2021-01-28 15:45:32.156942 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=2 SKIP=2 TOTAL=6
+2021-01-28 15:45:32.157418 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcddd2828>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcddd24e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fadcdd5f9e8>]}
+2021-01-28 15:45:32.157930 (MainThread): Flushing usage events
