@@ -1,5 +1,5 @@
 
-  create or replace view "@fab4"."d_municipalities" as (
+  create or replace view "subsurface_space"."d_municipalities" as (
     select
   municipality_code
   ,municipality_label
@@ -8,7 +8,7 @@
   ,region_code
   ,region_label
 from
-  "@fab4"."stg__municipalities"
+  "subsurface_space"."stage"."stg__municipalities"
 
 union all
 

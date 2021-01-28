@@ -1,5 +1,5 @@
 
-  create or replace view "@fab4"."stg__land_values" as (
+  create or replace view "subsurface_space"."stage"."stg__land_values" as (
     select
   cast(regexp_replace(nullif("Date mutation", ''), '([0-9]{2})/([0-9]{2})/([0-9]{4})', '$3-$2-$1') as date) as transaction_date
   ,cast(replace(nullif("Valeur fonciere", ''), ',', '.') as decimal) as transaction_amount
@@ -19,5 +19,5 @@
   ,cast(nullif("Nombre pieces principales", '') as decimal) as main_rooms_count
   ,nullif("Nature culture", '') as crop_code
 from
-  "fs"."valeurs_foncieres"
+  "subsurface_datalake"."valeurs_foncieres"
   )

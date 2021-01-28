@@ -2,7 +2,7 @@ select
   crop_code
   ,crop_label
 from
-  "@fab4"."crop_types"
+  "subsurface_space"."reference"."crop_types"
 
 union all
 

@@ -17,4 +17,4 @@ select
   ,cast(nullif("Nombre pieces principales", '') as decimal) as main_rooms_count
   ,nullif("Nature culture", '') as crop_code
 from
-  "fs"."valeurs_foncieres"
+  "subsurface_datalake"."valeurs_foncieres"

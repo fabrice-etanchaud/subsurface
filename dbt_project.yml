@@ -33,9 +33,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   subsurface:
     +materialized: view
+    staging:
+      +schema: stage
 
 seeds:
   subsurface:
+    +schema: reference
     +quote_columns: False
     +full_refresh: True
     premises_types:

@@ -1,10 +1,10 @@
 
-  create or replace view "@fab4"."d_crop_types" as (
+  create or replace view "subsurface_space"."d_crop_types" as (
     select
   crop_code
   ,crop_label
 from
-  "@fab4"."crop_types"
+  "subsurface_space"."reference"."crop_types"
 
 union all
 

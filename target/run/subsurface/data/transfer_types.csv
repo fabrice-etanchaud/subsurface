@@ -2,7 +2,7 @@
     
 
   create table
-    "$scratch"."dbt"."@fab4"."transfer_types_blue"
+    "$scratch"."dbt"."subsurface_space"."reference"."transfer_types_green"
   as (
     select
     cast(transfer_label_fr as varchar)

@@ -1,5 +1,5 @@
 
-  create or replace view "@fab4"."f_land_values" as (
+  create or replace view "subsurface_space"."f_land_values" as (
     select
   transaction_date
   ,coalesce(transaction_amount, 0) as transaction_amount
@@ -16,6 +16,6 @@
   ,coalesce(main_rooms_count, 0) as main_rooms_count
   ,coalesce(crop_code, 'N/A') as crop_code
 from
-  "@fab4"."stg__land_values" as stg__land_values
-  join "@fab4"."transfer_types" transfer_types on transfer_types.transfer_label_fr = stg__land_values.transfer_label_fr
+  "subsurface_space"."stage"."stg__land_values" as stg__land_values
+  join "subsurface_space"."reference"."transfer_types" transfer_types on transfer_types.transfer_label_fr = stg__land_values.transfer_label_fr
   )

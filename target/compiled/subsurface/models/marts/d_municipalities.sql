@@ -6,7 +6,7 @@ select
   ,region_code
   ,region_label
 from
-  "@fab4"."stg__municipalities"
+  "subsurface_space"."stage"."stg__municipalities"
 
 union all
 

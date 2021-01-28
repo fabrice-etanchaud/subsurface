@@ -6,4 +6,4 @@ select
     ,reg_code as region_code
     ,reg_nom as region_label
 from
-  "fs"."geo"."communes.csv"
+  "subsurface_datalake"."geo"."communes.csv"
